@@ -1,3 +1,3 @@
 # pysheetComments
 
-Comments for the Python Cheatsheet [blog](https://www.pythoncheatsheet.org/blog)
+This repository contains backups of the articles and comments of the python cheatsheet [blog](https://www.pythoncheatsheet.org/blog)
