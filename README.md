@@ -1,2 +1,3 @@
 # pysheetComments
-Comments for my blog
+
+Comments for the Python Cheatsheet [blog](https://www.pythoncheatsheet.org/blog)
