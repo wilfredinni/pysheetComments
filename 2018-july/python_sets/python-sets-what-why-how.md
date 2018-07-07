@@ -311,4 +311,4 @@ Using `diference()` or `-`, creates a new set with the values that are in "s1" b
 
 I hope that after reading this article you know what a set is, how can they help you write cleaner code and speed up your programs, as well as how to manipulate and the operations they can perform.
 
-If you have a doubt, please leave a comment and I will gladly try to answer them. Also, don´t forget that if you already understand sets, they have their own place in the Python Cheatsheet, where you can review at any time the examples used in this article.
+If you have any doubts, please leave a comment and I will gladly try to answer them. Also, don´t forget that if you already understand sets, they have their own place in the Python Cheatsheet, where you can review at any time the examples used in this article.
