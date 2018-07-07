@@ -134,7 +134,7 @@ Now let's use the _timeit_ module and see the excecution time of lists and sets 
 
 ```python
 >>> from timeit import timeit
->>> # and set:
+>>> # and the set:
 >>> print(timeit('list(set([1, 2, 3, 1, 2, 3, 4]))', number=1000))
 0.0010220493243764395
 >>> # faster and cleaner =)
@@ -224,7 +224,7 @@ And `update()` multiple ones:
 
 ### Removing Elements
 
-If you want to be alerted when your code tries to remove an element that is not in the set, use `remove`. Otherwise, `discard` provides a good alternative:
+If you want to be alerted when your code tries to remove an element that is not in the set, use `remove()`. Otherwise, `discard()` provides a good alternative:
 
 ```python
 >>> s = {1, 2, 3}
@@ -309,6 +309,6 @@ Using `diference()` or `-`, creates a new set with the values that are in "s1" b
 
 ## Conclusions
 
-I hope that after reading this article you know what a set is, how can they help you write cleaner code and speed up your programs, as well as how to manipulate and the operations they can perform.
+I hope that after reading this article you know what a set is, how to manipulate their elements and the operations they can perform. Knowing when to use a set will definitely help you write cleaner code and speed up your programs.
 
-If you have any doubts, please leave a comment and I will gladly try to answer them. Also, don´t forget that if you already understand sets, they have their own place in the Python Cheatsheet, where you can review at any time the examples used in this article.
+If you have any doubts, please leave a comment and I will gladly try to answer them. Also, don´t forget that if you already understand sets, they have their own place in the Python Cheatsheet, where you can have a quick reference and refresh what you already know.
