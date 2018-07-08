@@ -33,7 +33,7 @@ Initializing a set using curly braces `{}`
 >>>
 ```
 
-As you can see, both options are equally valid. The problem comes when what we want is an empty one:
+As you can see, both options are valid. The problem comes when what we want is an empty one:
 
 ```python
 >>> s = {}
@@ -51,7 +51,7 @@ Traceback (most recent call last):
 TypeError: unhashable type: 'list'
 ```
 
-Now that you know how to create a set and what type of elements it can have, let's continue and see _why_ we should always have them in our toolkit.
+Now that you know how to create a set and what type of elements it can contain, let's continue and see _why_ we should always have them in our toolkit.
 
 ## Why You Should Use Them
 
@@ -65,7 +65,7 @@ Now, let's start exploring the way that Python sets can help us not just with re
 
 ### Unordered Collection of Elements
 
-First things first: you can't acces a set element using indexes, or modify them with slices.
+First things first: you can't access a set element using indexes, or modify them with slices.
 
 ```python
 >>> s = {1, 2, 3}
@@ -84,7 +84,7 @@ BUT, if what we need is to remove duplicates, or do mathematical operations like
 
 ### No Duplicate Items
 
-While writing this i cannot stop thinking in all the times i used the for loop and the if statement to check and remove duplicate elements in a list. My face turns red remembering that, more than once, i wrote something like this:
+While writing this I cannot stop thinking in all the times I used the _for_ loop and the _if_ statement to check and remove duplicate elements in a list. My face turns red remembering that, more than once, I wrote something like this:
 
 ```python
 >>> my_list = [1, 2, 3, 2, 3, 4]
@@ -108,7 +108,7 @@ Or used a list comprehension:
 [1, 2, 3, 4]
 ```
 
-But it's ok, nothing of that matter anymore because we now have the useful sets in our arsenal:
+But it's ok, nothing of that matters anymore because we now have the sets in our arsenal:
 
 ```python
 >>> my_list = [1, 2, 3, 2, 3, 4]
@@ -154,7 +154,7 @@ Aren't sets are just Beautiful, Explicit, Simple and Flat?  =)
 
 ### Membership  Tests
 
-Every time we use an if statement to check if an element is, for example, in a list, you are doing a membership test:
+Every time we use an _if_ statement to check if an element is, for example, in a list, you are doing a membership test:
 
 ```python
 my_list = [1, 2, 3]
@@ -194,11 +194,11 @@ And sets are more performant than lists when doing them:
 ```
 Note: the avove tests come from [this](https://stackoverflow.com/questions/2831212/python-sets-vs-lists) StackOverflow thread.
 
-So if you are doing comparisons like this in huge lists, it should speed you a good bit if you convert that list to a set.
+So if you are doing comparisons like this in huge lists, it should speed you a good bit if you convert that list into a set.
 
 ## How to Use Them
 
-Now that you know what a set is and why you should use them, let's do a quick tour and see how we can modify and operate with them.
+Now that you know what a set is and why you should use them, let's do a quick tour and see how can we modify and operate with them.
 
 ### Adding Elements
 
