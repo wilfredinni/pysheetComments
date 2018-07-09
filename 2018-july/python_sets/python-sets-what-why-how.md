@@ -231,8 +231,10 @@ And `update()` multiple ones:
 >>> s = {1, 2, 3}
 >>> s.update([2, 3, 4, 5, 6])
 >>> s
-{1, 2, 3, 4, 5, 6}  # remember, sets automatically remove duplicates
+{1, 2, 3, 4, 5, 6} 
 ```
+
+Remember, sets remove duplicates.
 
 ### Removing Elements
 
@@ -290,8 +292,6 @@ set()
 {1, 2, 3, 4, 5}
 ```
 
-Remember, sets remove all duplicates.
-
 ### intersection()
 
 `intersection`  or `&`  will return a set containing only the elements that are common in all of them:
@@ -304,8 +304,6 @@ Remember, sets remove all duplicates.
 {3}
 ```
 
-The 3 is the only element that is in the three sets.
-
 ### difference()
 
 Using `diference()` or `-`, creates a new set with the values that are in "s1" but not in "s2":
@@ -317,8 +315,6 @@ Using `diference()` or `-`, creates a new set with the values that are in "s1" b
 {1}
 ```
 
-Why only 1 and no 1 and 4? Because `difference` cares just for the set to which we apply the method to. The only element that "s1" has but "s2" don't, is 1.
-
 ### symmetric_diference()
 
 `symetric_difference` or `^` will return all the values that are not common between the sets.
@@ -329,8 +325,6 @@ Why only 1 and no 1 and 4? Because `difference` cares just for the set to which 
 >>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
 {1, 4}
 ```
-
-The same example we used with _difference_, but this time we also obtain the 4.
 
 ## Conclusions
 
