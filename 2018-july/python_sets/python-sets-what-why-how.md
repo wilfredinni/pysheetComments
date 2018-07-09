@@ -65,22 +65,34 @@ Now, let's start exploring the way that Python sets can help us not just with re
 
 ### Unordered Collection of Elements
 
-First things first: you can't access a set element using indexes, or modify them with slices.
+First things first: you can't access a set element using indexes.
 
 ```python
 >>> s = {1, 2, 3}
->>> s(0)  # no indexing
+>>> s(0)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object is not callable
 >>>
->>> s[0:2]  # no slices 
+```
+
+Or modify them with slices:
+
+```python
+>>> s[0:2]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object is not subscriptable
 ```
 
 BUT, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use Sets. 
+
+I have to mention that _when iterating over, sets are outperformed by lists_, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read how and why: 
+
+- [TimeComplexity](https://wiki.python.org/moin/TimeComplexity)
+- [How is set() implemented?](https://stackoverflow.com/questions/3949310/how-is-set-implemented)
+- [Python Sets vs Lists](https://stackoverflow.com/questions/2831212/python-sets-vs-lists)
+- [Is there any advantage or disadvantage to using sets over list comps to ensure a list of unique entries?](https://mail.python.org/pipermail/python-list/2011-June/606738.html)
 
 ### No Duplicate Items
 
@@ -248,7 +260,7 @@ KeyError: 3
 >>> # nothing happens!
 ```
 
-We can also use `pop()` to randomly discard an element, or `clear()` to remove all the values from a set:
+We can also use `pop()` to randomly discard an element:
 
 ```python
 >>> s = {1, 2, 3, 4, 5}
@@ -256,7 +268,12 @@ We can also use `pop()` to randomly discard an element, or `clear()` to remove a
 1
 >>> s
 {2, 3, 4, 5}
->>>
+```
+
+Or `clear()` to remove all the values from a set:
+
+```python
+>>> s = {1, 2, 3, 4, 5}
 >>> s.clear()  # discard all the items
 >>> s
 set()
@@ -273,6 +290,8 @@ set()
 {1, 2, 3, 4, 5}
 ```
 
+Remember, sets remove all duplicates.
+
 ### intersection()
 
 `intersection`  or `&`  will return a set containing only the elements that are common in all of them:
@@ -285,6 +304,8 @@ set()
 {3}
 ```
 
+The 3 is the only element that is in the three sets.
+
 ### difference()
 
 Using `diference()` or `-`, creates a new set with the values that are in "s1" but not in "s2":
@@ -296,6 +317,8 @@ Using `diference()` or `-`, creates a new set with the values that are in "s1" b
 {1}
 ```
 
+Why only 1 and no 1 and 4? Because `difference` cares just for the set to which we apply the method to. The only element that "s1" has but "s2" don't, is 1.
+
 ### symmetric_diference()
 
 `symetric_difference` or `^` will return all the values that are not common between the sets.
@@ -306,6 +329,8 @@ Using `diference()` or `-`, creates a new set with the values that are in "s1" b
 >>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
 {1, 4}
 ```
+
+The same example we used with _difference_, but this time we also obtain the 4.
 
 ## Conclusions
 
