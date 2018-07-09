@@ -87,7 +87,7 @@ TypeError: 'set' object is not subscriptable
 
 BUT, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use Sets. 
 
-I have to mention that _when iterating over, sets are outperformed by lists_, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read about it: 
+I have to mention that when iterating over, sets are outperformed by lists, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read about it: 
 
 - [TimeComplexity](https://wiki.python.org/moin/TimeComplexity)
 - [How is set() implemented?](https://stackoverflow.com/questions/3949310/how-is-set-implemented)
@@ -153,7 +153,6 @@ Now let's use the _timeit_ module and see the excecution time of lists and sets 
 ```
 
 Not only we write _fewer lines_ with sets than with lists comprehensions, we also obtain more _readable_ and _performant_ code.
-
 
 From the [Zen of Python](https://www.python.org/dev/peps/pep-0020/):
 
@@ -330,4 +329,4 @@ Using `diference()` or `-`, creates a new set with the values that are in "s1" b
 
 I hope that after reading this article you know what a set is, how to manipulate their elements and the operations they can perform. Knowing when to use a set will definitely help you write cleaner code and speed up your programs.
 
-If you have any doubts, please leave a comment and I will gladly try to answer them. Also, don´t forget that if you already understand sets, they have their own place in the Python Cheatsheet, where you can have a quick reference and refresh what you already know.
+If you have any doubts, please leave a comment and I will gladly try to answer them. Also, don´t forget that if you already understand sets, they have their own [place](https://www.pythoncheatsheet.org/#sets) in the [Python Cheatsheet](https://www.pythoncheatsheet.org/), where you can have a quick reference and refresh what you already know.
