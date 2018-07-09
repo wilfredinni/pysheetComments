@@ -1,5 +1,7 @@
 # Python Sets: What, Why and How
 
+![sets](sets.png)
+
 Python comes equipped with several built-in data types to help you organize your data. These data structures include lists, dictionaries, tuples and **sets**.
 
 From the Python 3 documentation:
