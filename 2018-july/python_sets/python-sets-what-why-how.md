@@ -45,7 +45,7 @@ That's right, we will get a dictionary instead of a set if we use empty curly br
 It's a good moment to mention that for the sake of simplicity, all the examples provided in this article will use single digit integers, but sets can have all the [hashtable](https://docs.python.org/3/glossary.html#term-hashable) data types that Python support. In other words, integers, strings and tuples, but not _mutable_ items like _lists_ or _dictionaries_:
 
 ```python
->>> s = {1, 'coffe', [4, 'python']}
+>>> s = {1, 'coffee', [4, 'python']}
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unhashable type: 'list'
@@ -87,7 +87,7 @@ TypeError: 'set' object is not subscriptable
 
 BUT, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use Sets. 
 
-I have to mention that _when iterating over, sets are outperformed by lists_, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read how and why: 
+I have to mention that _when iterating over, sets are outperformed by lists_, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read about it: 
 
 - [TimeComplexity](https://wiki.python.org/moin/TimeComplexity)
 - [How is set() implemented?](https://stackoverflow.com/questions/3949310/how-is-set-implemented)
