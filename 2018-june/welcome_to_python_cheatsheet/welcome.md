@@ -1,4 +1,4 @@
-Anyone can forget how to make [character classes for a regex](#Making-Your-Own-Character-Classes), [slice a list](#Getting-Sublists-with-Slices) or do a [for loop](#Using-for-Loops-with-Lists). This cheat sheet tries to provide a basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
+Anyone can forget how to make [character classes for a regex](https://www.pythoncheatsheet.org#Making-Your-Own-Character-Classes), [slice a list](https://www.pythoncheatsheet.org#Getting-Sublists-with-Slices) or do a [for loop](https://www.pythoncheatsheet.org#Using-for-Loops-with-Lists). This cheat sheet tries to provide a basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
 
 ## How to use it
 
