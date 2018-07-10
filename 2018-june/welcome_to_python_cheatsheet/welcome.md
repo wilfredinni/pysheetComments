@@ -1,14 +1,10 @@
-# Welcome to Python Cheatsheet
-
-![pysheet](welcome.png)
-
 Anyone can forget how to make [character classes for a regex](#Making-Your-Own-Character-Classes), [slice a list](#Getting-Sublists-with-Slices) or do a [for loop](#Using-for-Loops-with-Lists). This cheat sheet tries to provide a basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
 
 ## How to use it
 
 It's very easy, just go to the [python cheatsheet](https://www.pythoncheatsheet.org) and use **ctrl/cmd+z** to open the *quick search* and start typing!
 
-![quick_search](quick_search.png)
+![quick_search](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2018-june/welcome_to_python_cheatsheet/quick_search.png)
 
 If you are curious, the page renders a markdown file directly from the [Project Repository](https://github.com/wilfredinni/python-cheatsheet) and with some javascript, it indexes all the titles, subtitles and creates the anchor links, so every time a change is committed, the website is automatically updated.
 
