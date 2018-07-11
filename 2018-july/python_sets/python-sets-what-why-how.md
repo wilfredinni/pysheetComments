@@ -151,6 +151,8 @@ Now let's use the _timeit_ module and see the excecution time of lists and sets 
 
 Not only we write _fewer lines_ with sets than with lists comprehensions, we also obtain more _readable_ and _performant_ code.
 
+Note: remember that sets are unordered, so there is no guarantee that when converting them back to a list the order of the elements is going to be preserved.
+
 From the [Zen of Python](https://www.python.org/dev/peps/pep-0020/):
 
 > Beautiful is better than ugly. <br>
