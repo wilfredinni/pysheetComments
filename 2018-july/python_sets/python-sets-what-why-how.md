@@ -70,8 +70,7 @@ First things first: you can't access a set element using indexes.
 >>> s[0]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: 'set' object is not callable
->>>
+TypeError: 'set' object does not support indexing
 ```
 
 Or modify them with slices:
