@@ -137,8 +137,8 @@ Now let's use the _timeit_ module and see the excecution time of lists and sets 
 ...     return no_duplicate_list
 ...
 >>> # first, let's see how the list perform:
->>> print(timeit('no_duplicates([1, 2, 3, 1, 7])', globals=globals(), number=10000))
-0.01879758248981034
+>>> print(timeit('no_duplicates([1, 2, 3, 1, 7])', globals=globals(), number=1000))
+0.0018683355819786227
 ```
 
 ```python
