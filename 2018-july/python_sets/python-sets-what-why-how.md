@@ -40,7 +40,7 @@ As you can see, both options are valid. The problem comes when what we want is a
 ```
 That's right, we will get a dictionary instead of a set if we use empty curly braces =)
 
-It's a good moment to mention that for the sake of simplicity, all the examples provided in this article will use single digit integers, but sets can have all the [hashtable](https://docs.python.org/3/glossary.html#term-hashable) data types that Python support. In other words, integers, strings and tuples, but not _mutable_ items like _lists_ or _dictionaries_:
+It's a good moment to mention that for the sake of simplicity, all the examples provided in this article will use single digit integers, but sets can have all the [hashable](https://docs.python.org/3/glossary.html#term-hashable) data types that Python support. In other words, integers, strings and tuples, but not _mutable_ items like _lists_ or _dictionaries_:
 
 ```python
 >>> s = {1, 'coffee', [4, 'python']}
