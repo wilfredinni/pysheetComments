@@ -59,7 +59,7 @@ From the [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/la
 
 > When a veteran Python developer (a Pythonista) calls portions of code not “Pythonic”, they usually mean that these lines of code do not follow the common guidelines and fail to express its intent in what is considered the best (hear: most readable) way.
 
-Now, let's start exploring the way that Python sets can help us not just with readability, but also speeding up our programs execution time.
+Let's start exploring the way that Python sets can help us not just with readability, but also speeding up our programs execution time.
 
 ### Unordered Collection of Elements
 
