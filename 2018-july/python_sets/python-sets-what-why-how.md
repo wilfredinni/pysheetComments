@@ -160,7 +160,7 @@ Explicit is better than implicit.<br>
 Simple is better than complex.<br>
 Flat is better than nested.
 
-Aren't sets are just Beautiful, Explicit, Simple and Flat?  =) 
+Aren't sets just Beautiful, Explicit, Simple and Flat?  =) 
 
 ### Membership  Tests
 
@@ -202,7 +202,7 @@ And sets are more performant than lists when doing them:
 0.12354438152988223
 >>>
 ```
-Note: the avove tests come from [this](https://stackoverflow.com/questions/2831212/python-sets-vs-lists) StackOverflow thread.
+Note: the above tests come from [this](https://stackoverflow.com/questions/2831212/python-sets-vs-lists) StackOverflow thread.
 
 So if you are doing comparisons like this in huge lists, it should speed you a good bit if you convert that list into a set.
 
