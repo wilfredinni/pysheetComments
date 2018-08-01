@@ -1,4 +1,4 @@
-As a self-taught Developer, I think that one of the most important things when starting to learn a new skill is to surround ourselves with all the things that can help us improve. We can read Blogs, follow developers on Twitter, read and contribute to their projects on GitHub, subscribe to the different mailing list that exists, and of course we can't forget the YouTubers that have put online and free of charge, thousands of hours of content so we could just keep getting better and better at this. 
+As a self-taught Developer, I think that one of the most important things when starting to learn a new skill is to surround ourselves with all the things that can help us improve. We can read Blogs, follow developers on Twitter, read and contribute to their projects on GitHub, subscribe to the different mailing list that exists, and of course, we can't forget the YouTubers that have put online and free of charge, thousands of hours of content so we could just keep getting better and better at this. 
 
 In this post, I want to share all the assets that I have collected to this point. It may not be much, but they really have helped me.
 
@@ -6,9 +6,9 @@ In this post, I want to share all the assets that I have collected to this point
 
 - [Real Python](https://realpython.com/)
 > The realpython.com tutorial team is known for making the highest-quality Python tutorials available online.
-- [Miguel Grinberg](https://blog.miguelgrinberg.com/index) (Here you can find the Flask Mega Tutorial. I used it myself as a starting point to build this site =) )
+- [Miguel Grinberg](https://blog.miguelgrinberg.com/index) (Here you can find the [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). I used it myself as a starting point to build this site.)
 > I spent some of my spare time in the last month or so writing a tiny blog engine, and I really like how it came out.
-- [simple is better than complex ](https://simpleisbetterthancomplex.com/) (Similar tutorial as Miguel Grinberg, but for Django.)
+- [simple is better than complex ](https://simpleisbetterthancomplex.com/)
 > Stories about Python, Django and Web Development.
 - [Full Stack Python](https://www.fullstackpython.com/blog.html)
 > Now you want to take your initial Python knowledge and make something real, like a web application to show off to friends or sell as a service to customers. That's where Full Stack Python comes in. You have come to the right place to learn everything you need to create, deploy and operate Python-powered applications.
@@ -45,9 +45,16 @@ In this post, I want to share all the assets that I have collected to this point
 
 ## Weekly Mailing Lists
 
+- [Python Mailing Lists and Newsgroups](https://www.python.org/community/lists/)
+> Here's an overview of the mail and news resources for python.
 - [Import Python](https://importpython.com/newsletter/)
+> Insightful Articles, Tutorials, Projects, Videos, Tweets delivered in your inbox.
 - [PyCoders Weekly](https://pycoders.com/)
+> A free weekly e-mail newsletter, on Fridays, for those interested in python development and various topics around python.
 - [Python Weekly](https://www.pythonweekly.com/)
+> A free weekly newsletter featuring curated news, articles, new releases, jobs etc related to Python.
+- [Django Mailing Lists](https://www.djangoproject.com/)
+> Subscribe to one of our mailing lists to stay up to date with everything in the Django community
 
 ## Twitter
 
