@@ -1,8 +1,9 @@
-As a self-taught Developer, I think that one of the most important things when starting to learn a new skill is to surround ourselves with all the things that can help us improve. We can read Blogs, follow developers on Twitter, read and contribute to their projects on GitHub, subscribe to the different mailing list that exists, and of course, we can't forget the YouTubers that have put online and free of charge, thousands of hours of content so we could just keep getting better and better at this. 
+As a self-taught Python Developer, I think that one of the most important things when starting is to surround ourselves with all things Python related. We can read Blogs, follow developers on Twitter and try to contribute to their projects on GitHub. We can also subscribe to the different mailing lists that exist, and of course, to the many YouTube channels that the YouTubers have put online and free of charge so we could just keep getting better and better at Python. 
 
 In this post, I want to share all the assets that I have collected to this point. It may not be much, but they really have helped me.
 
 ## Awesome Python
+
 - [Awesome Python](https://awesome-python.com/)
 > A curated list of awesome Python frameworks, libraries, software and resources.
 
@@ -86,7 +87,6 @@ In this post, I want to share all the assets that I have collected to this point
 
 ## Twitter
 
-### People
 - [Guido van Rossum](https://twitter.com/gvanrossum)
 > Python's creator and emeritus BDFL. Working at Dropbox. Computer History Museum Fellow.
 
@@ -99,10 +99,7 @@ In this post, I want to share all the assets that I have collected to this point
 - [David Beazley](https://twitter.com/dabeaz)
 > Author of the Python Essential Reference and Python Cookbook. I tweet deep thoughts about code, bikes, kids, and stuff. 
 
-- [Ewa Jodlowska](https://twitter.com/ewa_jodlowska)
-> Director of Operations for the Python Software Foundation.
-
-- [Corey Schager](https://twitter.com/CoreyMSchafer)
+- [Corey Schafer](https://twitter.com/CoreyMSchafer)
 > Developer and Designer who enjoys woodworking, kayaking, astronomy, and building stuff.
 
 - [Adrian Holovaty](https://twitter.com/adrianholovaty)
@@ -117,7 +114,6 @@ In this post, I want to share all the assets that I have collected to this point
 - [Michael Kennedy](https://twitter.com/mkennedy)
 > A Python and MongoDB enthusiast, and an entrepreneur. Host of @TalkPython and @PythonBytes, founder of Talk Python Training. Python Software Foundation Fellow.
 
-### Organizations
 - [Python Software](https://twitter.com/ThePSF)
 > The Python Software Foundation. For help with Python code, see comp.lang.python.
 
@@ -175,7 +171,11 @@ In this post, I want to share all the assets that I have collected to this point
 - [Boostlog - Python](https://twitter.com/BoostLog_Python)
 > A blogging platform developers. Here will introduce the Python article posted on #Boostlog.
 
+- [Python Cheatsheet](https://twitter.com/pyCheatsheet) 🤭
+> Python cheat sheet and Articles for Beginner and Advanced Developers.
+
 ## Podcasts
+
 - [Python Bytes](https://twitter.com/pythonbytes)
 > Python Headlines delivered directly to your earbuds.
 
@@ -184,13 +184,13 @@ In this post, I want to share all the assets that I have collected to this point
 
 ## YouTube
 
-This list is going to be short, just my favorites. If you want a realy complete one, check [The Ultimate List of Python YouTube Channels](https://realpython.com/python-youtube-channels/) from the guys at [Real Python](https://realpython.com/).
-
-- [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
-> This channel is focused on creating tutorials and walkthroughs for software developers, programmers, and engineers. 
+This list is going to be short, just my favorites. If you want a realy complete one, check [The Ultimate List of Python YouTube Channels](https://realpython.com/python-youtube-channels/) from [Real Python](https://realpython.com/).
 
 - [Coding Tech](https://www.youtube.com/channel/UCtxCXg-UvSnTKPOzLH4wJaQ)
 > Coding Tech partners with the tech conferences around the world that provided Coding Tech with their EXPLICIT permissions to republish videos on this channel.
+
+- [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
+> This channel is focused on creating tutorials and walkthroughs for software developers, programmers, and engineers. 
 
 - [Pretty Printed](https://www.youtube.com/channel/UC-QDfvrRIDB6F0bIO4I4HkQ)
 >  I'm Anthony. I make programming videos.
@@ -208,6 +208,7 @@ This list is going to be short, just my favorites. If you want a realy complete 
 > Python Programming tutorials, going further than just the basics. Learn about machine learning, finance, data analysis, robotics, web development, game development and more.
 
 ## Questions
+
 - [Stack Overflow](https://stackoverflow.com/)
 > Each month, over 50 million developers come to Stack Overflow to learn, share their knowledge, and build their careers.
 
@@ -215,4 +216,9 @@ This list is going to be short, just my favorites. If you want a realy complete 
 > A place to share knowledge and better understand the world.
 
 ## Conclusion
-We have no excuse.
+
+For all the people who try to put quality content online, for the ones that do it in their spare time and for free: don't be a jerk. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Time and server, they all cost money =)
+
+As always, if you think something is missing, leave a comment and I will update the post later.
+
+Have a nice day!
