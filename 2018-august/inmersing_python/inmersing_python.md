@@ -6,6 +6,9 @@ In this post, I want to share all the assets that I have collected to this point
 - [Awesome Python](https://awesome-python.com/)
 > A curated list of awesome Python frameworks, libraries, software and resources.
 
+- [Python LibHunt](https://python.libhunt.com/)
+> Your go-to Python Toolbox.
+
 ## Blogs
 
 - [Real Python](https://realpython.com/)
@@ -122,7 +125,7 @@ In this post, I want to share all the assets that I have collected to this point
 > The Python core development team.
 
 - [Anaconda](https://twitter.com/anacondainc)
-> #Anaconda is the world’s most popular and trusted #Python #DataScience platform, with over 6M users. We help people change the world.
+> Anaconda is the world’s most popular and trusted #Python #DataScience platform, with over 6M users. We help people change the world.
 
 - [Project Jupyter](https://twitter.com/ProjectJupyter)
 > Multi-language interactive computing environments. The future home of the IPython notebook and related projects (same folks, same code, new name, new repos).
@@ -179,12 +182,9 @@ In this post, I want to share all the assets that I have collected to this point
 - [Talk to Python](https://talkpython.fm/)
 > A podcast on Python and related technologies.
 
-- [Python LibHunt](https://twitter.com/PythonLibHunt)
-> Your go-to Python Toolbox.
-
 ## YouTube
 
-This list is going to be short, just my favorites. If you want a realy complete one, check [The Ultimate List of Python YouTube Channels](https://realpython.com/python-youtube-channels/) from the guys at [Real Python](https://realpython.com/)
+This list is going to be short, just my favorites. If you want a realy complete one, check [The Ultimate List of Python YouTube Channels](https://realpython.com/python-youtube-channels/) from the guys at [Real Python](https://realpython.com/).
 
 - [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
 > This channel is focused on creating tutorials and walkthroughs for software developers, programmers, and engineers. 
@@ -207,8 +207,12 @@ This list is going to be short, just my favorites. If you want a realy complete 
 - [sentdex](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
 > Python Programming tutorials, going further than just the basics. Learn about machine learning, finance, data analysis, robotics, web development, game development and more.
 
-## Forums
-
 ## Questions
+- [Stack Overflow](https://stackoverflow.com/)
+> Each month, over 50 million developers come to Stack Overflow to learn, share their knowledge, and build their careers.
+
+- [Quora](https://www.quora.com/)
+> A place to share knowledge and better understand the world.
 
 ## Conclusion
+We have no excuse.
