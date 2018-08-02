@@ -62,7 +62,6 @@ In this post, I want to share some of the "assets" that I have collected to this
 
 - [PyBites](https://pybit.es/pages/articles.html)
 > A Community that Masters Python through Code Challenges
-
 - [Stack Abuse](https://stackabuse.com/tag/python/)
 - [Martin Thoma](https://martin-thoma.com/)
 - [Sagar Giri](https://girisagar46.github.io/)
@@ -238,7 +237,7 @@ This list is going to be short, just my favorites. If you want a realy complete 
 
 ## Conclusion
 
-For all the people who try to put quality content online, for the ones that do it in their spare time and for free: don't be a jerk. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site =).
+For all the people who try to put quality content online, for the ones that do it in their spare time and for free: don't be a jerk. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Support Them =)
 
 As always, if you think something is missing, leave a comment and I will update the post later.
 
