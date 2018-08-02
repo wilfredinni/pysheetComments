@@ -1,6 +1,6 @@
-As a self-taught Python Developer, I think that one of the most important things when starting is to surround ourselves with all things Python related. We can read Blogs, follow developers on Twitter and try to contribute to their projects on GitHub. We can also subscribe to the different mailing lists that exist, and of course, to the many YouTube channels that the YouTubers have put online and free of charge so we could just keep getting better and better at Python. 
+As a self-taught Python Developer, I think that one of the most important things to do when we are starting is to surround ourselves with all things Python related. We can read Blogs, follow developers on Twitter and try to contribute to their projects on GitHub. We can also subscribe to the different mailing lists that exist, and of course, to the many YouTube channels that the YouTubers have put online and free of charge so we could keep lerning Python. 
 
-In this post, I want to share all the assets that I have collected to this point. It may not be much, but they really have helped me.
+In this post, I want to share some of the "assets" that I have collected to this point.
 
 ## Awesome Python
 
@@ -111,6 +111,9 @@ In this post, I want to share all the assets that I have collected to this point
 - [Harrison Kinsley](https://twitter.com/Sentdex)
 > I like to build things. Programming is neat. INTJ https://hkinsley.com , https://pythonprogramming.net , http://sentdex.com.
 
+- [Al Sweigart](https://twitter.com/AlSweigart)
+> Author of programming books. I use Python 4.2.
+
 - [Michael Kennedy](https://twitter.com/mkennedy)
 > A Python and MongoDB enthusiast, and an entrepreneur. Host of @TalkPython and @PythonBytes, founder of Talk Python Training. Python Software Foundation Fellow.
 
@@ -198,9 +201,6 @@ This list is going to be short, just my favorites. If you want a realy complete 
 - [Socratica](https://www.youtube.com/channel/UCW6TXMZ5Pq6yL6_k5NZ2e0Q)
 > Socratica makes high-quality educational videos on math and science. New videos every week! 
 
-- [Miguel Grinberg](https://www.youtube.com/channel/UCZJiXG_auf0o7LByqC1LHuQ)
-> Flask
-
 - [Sebastiaan Mathôt](https://www.youtube.com/channel/UC6HfeAa0vWeSWS6IcNAjZ2A)
 > A mix of videos about programming in Python and OpenSesame, and psychology-related topics.
 
@@ -215,9 +215,30 @@ This list is going to be short, just my favorites. If you want a realy complete 
 - [Quora](https://www.quora.com/)
 > A place to share knowledge and better understand the world.
 
+- [Python Community Forums](https://www.python.org/community/forums/)
+> If you're looking for a forum in your native language, please check out the local user groups page at the Python Wiki.
+
+- [r/python](https://www.reddit.com/r/Python/)
+> News about the dynamic, interpreted, interactive, object-oriented, extensible programming language Python.
+
+- [r/pythontips](https://www.reddit.com/r/pythontips/)
+> A place to get a quick fix of python tips and tricks to make you a better Pythonista.
+
+- [r/learnpython](https://www.reddit.com/r/learnpython/)
+> Subreddit for posting content, questions, and asking for general advice about learning the Python programming language.
+
+- [r/django](https://www.reddit.com/r/django/)
+> Django subreddit
+
+- [r/djangolearning](https://www.reddit.com/r/djangolearning/)
+> A group dedicated to learning Django, a Python web framework.
+
+- [r/flask](https://www.reddit.com/r/flask/)
+> Flask is a Python micro-framework for web development. Flask is easy to get started and a great way to build web sites and web applications.
+
 ## Conclusion
 
-For all the people who try to put quality content online, for the ones that do it in their spare time and for free: don't be a jerk. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Time and server, they all cost money =)
+For all the people who try to put quality content online, for the ones that do it in their spare time and for free: don't be a jerk. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site =).
 
 As always, if you think something is missing, leave a comment and I will update the post later.
 
