@@ -1,4 +1,4 @@
-As a self-taught Python Developer and a newbie myself, I think that one of the most important things when starting is to surround ourselves with all things Python related. We can read Blogs, follow developers on Twitter and try to contribute to their projects on GitHub. We can also subscribe to the different mailing lists that exist, and of course, to the many YouTube channels that put online and free of charge millions of hours of content so we can just keep getting better and better at Python.
+As a self-taught Python Developer and a newbie myself, I think that one of the most important things when starting is to surround ourselves with all things Python related. We can [read Blogs](#Blogs), follow [developers on Twitter](#Twitter) and try to contribute to their projects on GitHub. We can also subscribe to the different [mailing lists](#Weekly-Mailing-Lists) that exist, and of course, to the many [YouTube channels](#YouTube) that put online and free of charge millions of hours of content so we can just keep getting better and better at Python.
 
 In this post, I want to share some of the "assets" that I have collected to this point.
 
@@ -237,7 +237,7 @@ This list is going to be short, just my favorites. If you want a realy complete 
 
 ## Conclusion
 
-I just two things: First, we have no excuse. And second, for all the people who try to put quality content online, for the ones that do it in their spare time and for free: don't be a jerk. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Support Them.
+I just two things: First, _we have no excuse_. And second, for all the people who try to put quality content online, for the ones that do it in their spare time and for free: _don't be a jerk_. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Support Them.
 
 As always, if you think something is missing, leave a comment and I will update the post later.
 
