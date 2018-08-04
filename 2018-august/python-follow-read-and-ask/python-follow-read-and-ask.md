@@ -237,7 +237,7 @@ This list is going to be short, just my favorites. If you want a realy complete 
 
 ## Conclusion
 
-I just two things: First, _we have no excuse_. And second, for all the people who try to put quality content online, for the ones that do it in their spare time and for free: _don't be a jerk_. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Support Them.
+Just two things: First, _we have no excuse_. And second, for all the people who try to put quality content online, for the ones that do it in their spare time and for free: _don't be a jerk_. Subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Support Them.
 
 As always, if you think something is missing, leave a comment and I will update the post later.
 
