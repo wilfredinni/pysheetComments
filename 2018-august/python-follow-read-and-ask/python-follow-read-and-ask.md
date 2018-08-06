@@ -30,6 +30,9 @@ In this post, I want to share some of the "assets" that I have collected to this
 - [The Invent with Python Blog](https://inventwithpython.com/blog/)
 > Learning to program makes you a smarter and more capable human being. Computers are not only the most common tool we encounter in our day-to-day lives, but also the most powerful. Even if your plans don't include becoming a software engineer writing code for the next Mars mission, you can find value in learning to code.
 
+- [OVERIQ](https://overiq.com/blog/) ([Here](https://overiq.com/), you can also find coruses on Python, Django, Flask, SQLAlchemy and C)
+> I'm a simple coder who have a knack with computer languages. My aim is to educate every one with the best of the language knowledge which is not easily available anywhere else in the Internet world.
+
 - [The Mouse vs the Python](https://www.blog.pythonlibrary.org/)
 > My name is Mike Driscoll. I am a computer programmer by trade and use Python almost exclusively to make my living. 
 
