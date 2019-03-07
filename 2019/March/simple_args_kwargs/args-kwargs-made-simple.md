@@ -135,10 +135,10 @@ And a lot [more](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-
 
 ## Conclusion
 
-`*args` and `**kwargs` may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability. If you know about [tuples](https://www.pythoncheatsheet.org/#Tuple-Data-Type) and [dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data), you are ready to go. 
+`*args` and `**kwargs` may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability. If you know about [tuples](https://www.pythoncheatsheet.org/#Tuple-Data-Type) and [dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data), you are ready to go.
 
-If you feel like playing with them, [this](https://hub.mybinder.org/user/wilfredinni-python-cheatsheet-pjyv1in6/notebooks/jupyter_notebooks/18_args_and_kwargs.ipynb) is an online Jupyter Notebook for you to try.
+Want to play with args and kwargs? [This](https://hub.mybinder.org/user/wilfredinni-python-cheatsheet-pjyv1in6/notebooks/jupyter_notebooks/18_args_and_kwargs.ipynb) is an online Jupyter Notebook for you to try.
 
-Also, some examples make use of the `f-strings`, a relatively new way to format strings in Python (3.6+). If curious, [here](https://www.pythoncheatsheet.org/#Formatted-String-Literals-or-f-strings) you can read more about it.
+Also, some examples make use of the `f-strings`, a relatively new way to format strings in Python (3.6+). [Here](https://www.pythoncheatsheet.org/#Formatted-String-Literals-or-f-strings) you can read more about it.
 
-If you have any doubt or suggestion, please leave a comment. Have a nice day!
+Any doubt or suggestion? Please leave a comment and have a nice day!
