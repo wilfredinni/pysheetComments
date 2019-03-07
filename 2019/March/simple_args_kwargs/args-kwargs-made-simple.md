@@ -41,7 +41,7 @@ So, how does Python know that we want our function to accept multiple arguments 
 
 Now that have covered the basics, let's work with them 👊.
 
-## *Args
+## args
 
 We now know how to pass multiple arguments using `*args` as a parameter to our functions, but how do we work with them? It's easy: all the arguments are contained within the `args` variable as a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type):
 
@@ -91,7 +91,7 @@ some_function('arg1', 'arg2', 'arg3')
 
 Whatever you do with a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type), you can do it with `args`.
 
-## **kwargs
+## kwargs
 
 While arguments are stored in the args variable as a tuple, keywords are within `kwargs`, but this time as a [dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) where the key is the keyword:
 
