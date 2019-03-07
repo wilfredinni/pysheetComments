@@ -4,7 +4,7 @@ A few months ago I decided to stop being lazy and started to research it. To my 
 
 ## Basics
 
-The first thing you need to know is that args and kwargs lets you pass an undefined number of `arguments` and `keywords` when calling a [function](https://www.pythoncheatsheet.org/#Functions):
+The first thing you need to know is that `*args` and `**kwargs` lets you pass an undefined number of `arguments` and `keywords` when calling a [function](https://www.pythoncheatsheet.org/#Functions):
 
 ```python
 def some_function(*args, **kwargs):
@@ -31,15 +31,15 @@ def some_function(*arguments, **keywords):
     pass
 ```
 
-So, how does Python know that we want our functions to accept multiple arguments and/or keywords? Yes, the answers are the `*` and `**` operators.
-
 > A note about conventions:
 >
 > Even if the above function works, don't do it. Conventions are there to help you write readable code for you and anyone that might be interested in your project.
 >
 > Other conventions include the 4 space indentation, comments, and imports. Reading the [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/) is highly recommended.
 
-Now that have covered the basics, let's work with them.
+So, how does Python know that we want our function to accept multiple arguments and/or keywords? Yes, the answers are the `*` and `**` operators.
+
+Now that have covered the basics, let's work with them 👊.
 
 ## *Args
 
