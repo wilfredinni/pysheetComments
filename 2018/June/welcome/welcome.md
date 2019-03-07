@@ -4,7 +4,7 @@ Anyone can forget how to make [character classes for a regex](https://www.python
 
 It's very easy, just go to the [python cheatsheet](https://www.pythoncheatsheet.org) and use **ctrl/cmd+z** to open the *quick search* and start typing!
 
-![quick_search](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2018-june/welcome_to_python_cheatsheet/quick_search.png)
+![quick_search](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2018/June/welcome/quick_search.png)
 
 If you are curious, the page renders a markdown file directly from the [Project Repository](https://github.com/wilfredinni/python-cheatsheet) and with some javascript, it indexes all the titles, subtitles and creates the anchor links, so every time a change is committed, the website is automatically updated.
 
