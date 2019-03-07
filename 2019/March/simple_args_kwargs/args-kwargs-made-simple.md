@@ -1,6 +1,6 @@
 I do not know about you, but every time I saw some function with `*args` and `**kwargs` as parameters, I'd get a little scared. I've even "used" them while doing some backend work with Django without understanding a thing. If you're a self-taught developer like me, I know you've been there too.
 
-A few months ago I decided to stop being negligent and started to research it. To my surprise, they were very easy to grasp when playing with the interpreter but not so much when reading about them. So, I wrote this post trying to explain [args and kwargs](https://www.pythoncheatsheet.org/#args-and-kwargs) the way I would have liked someone explained them to me.
+A few months ago I decided to stop being lazy and started to research it. To my surprise, they were very easy to grasp when playing with the interpreter but not so much when reading about them. So, I wrote this post trying to explain [args and kwargs](https://www.pythoncheatsheet.org/#args-and-kwargs) the way I would have liked someone explained them to me.
 
 ## Basics
 
@@ -37,13 +37,13 @@ So, how does Python know that we want our functions to accept multiple arguments
 >
 > Even if the above function works, don't do it. Conventions are there to help you write readable code for you and anyone that might be interested in your project.
 >
-> Other conventions include the 4 space indentation, comments, and imports. If interested, check the [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/).
+> Other conventions include the 4 space indentation, comments, and imports. Reading the [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/) is highly recommended.
 
-Now that you know the basics let's work with them.
+Now that have covered the basics, let's work with them.
 
 ## *Args
 
-We now know how to pass multiple arguments using `*args` as a parameter to our functions, but, how do we work with them? Well, all the arguments are contained within the `args` variable as a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type):
+We now know how to pass multiple arguments using `*args` as a parameter to our functions, but how do we work with them? It's easy: all the arguments are contained within the `args` variable as a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type):
 
 ```python
 def some_function(*args):
@@ -93,7 +93,7 @@ Whatever you do with a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type
 
 ## **kwargs
 
-While arguments are stored in the args variable as a tuple, keywords are stored within `kwargs`, but this time as a [dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) where the key is the keyword:
+While arguments are stored in the args variable as a tuple, keywords are within `kwargs`, but this time as a [dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) where the key is the keyword:
 
 ```python
 def some_function(**kwargs):
@@ -135,7 +135,9 @@ And a lot [more](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-
 
 ## Conclusion
 
-`*args` and `**kwargs` may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability. If you feel like playing with them, [this](https://hub.mybinder.org/user/wilfredinni-python-cheatsheet-pjyv1in6/notebooks/jupyter_notebooks/18_args_and_kwargs.ipynb) is an online Jupyter Notebook for you to try.
+`*args` and `**kwargs` may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability. If you know about [tuples](https://www.pythoncheatsheet.org/#Tuple-Data-Type) and [dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data), you are ready to go. 
+
+If you feel like playing with them, [this](https://hub.mybinder.org/user/wilfredinni-python-cheatsheet-pjyv1in6/notebooks/jupyter_notebooks/18_args_and_kwargs.ipynb) is an online Jupyter Notebook for you to try.
 
 Also, some examples make use of the `f-strings`, a relatively new way to format strings in Python (3.6+). If curious, [here](https://www.pythoncheatsheet.org/#Formatted-String-Literals-or-f-strings) you can read more about it.
 
