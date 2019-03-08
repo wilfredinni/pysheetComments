@@ -11,7 +11,7 @@ def some_function(*args, **kwargs):
     pass
 
 # call some_function with any number of arguments
-some_function(arg1, arg1, arg2)
+some_function(arg1, arg2, arg3)
 
 # call some_function with any number of keywords
 some_function(key1=arg1, key2=arg2, key3=arg3)
