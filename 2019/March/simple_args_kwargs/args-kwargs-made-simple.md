@@ -93,7 +93,7 @@ Whatever you do with a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type
 
 ## kwargs
 
-While arguments are stored in the args variable as a tuple, keywords are within `kwargs`, but this time as a [dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) where the key is the keyword:
+While arguments are stored in the args variable, keywords are within `kwargs`, but this time as a [dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) where the key is the keyword:
 
 ```python
 def some_function(**kwargs):
