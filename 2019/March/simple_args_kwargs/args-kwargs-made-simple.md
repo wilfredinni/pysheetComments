@@ -1,6 +1,6 @@
 I do not know about you, but every time I saw some function with `*args` and `**kwargs` as parameters, I'd get a little scared. I've even "used" them while doing some backend work with Django without understanding a thing. If you're a self-taught developer like me, I know you've been there too.
 
-A few months ago I decided to stop being lazy and started to research it. To my surprise, they were very easy to grasp when playing with the interpreter but not so much when reading about them. So, I wrote this post trying to explain [args and kwargs](https://www.pythoncheatsheet.org/#args-and-kwargs) the way I would have liked someone explained them to me.
+A few months ago I decided to stop being lazy and started to research it. To my surprise, they were very easy to grasp when playing with the interpreter but not so much when reading about them. I wrote this post trying to explain [args and kwargs](https://www.pythoncheatsheet.org/#args-and-kwargs) the way I would have liked someone explained them to me.
 
 ## Basics
 
