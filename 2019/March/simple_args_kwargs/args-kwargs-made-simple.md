@@ -39,7 +39,7 @@ def some_function(*arguments, **keywords):
 
 So, how does Python know that we want our function to accept multiple arguments and/or keywords? Yes, the answers are the `*` and `**` operators.
 
-Now that have covered the basics, let's work with them 👊.
+Now that we have covered the basics, let's work with them 👊.
 
 ## args
 
