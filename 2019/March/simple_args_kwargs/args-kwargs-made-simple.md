@@ -120,7 +120,7 @@ some_function(key1='arg1', key2='arg2', key3='arg3')
 # key3: arg3
 ```
 
-Use the get() method:
+Use the `get()` method:
 
 ```python
 def some_function(key, **kwargs):
