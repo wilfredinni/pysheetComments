@@ -139,6 +139,6 @@ And a lot [more](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-
 
 Want to play with args and kwargs? [This](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks) is an online Jupyter Notebook for you to try.
 
-Also, some examples make use of the `f-strings`, a relatively new way to format strings in Python (3.6+). [Here](https://www.pythoncheatsheet.org/#Formatted-String-Literals-or-f-strings) you can read more about it.
+Also, some examples make use of `f-strings`, a relatively new way to format strings in Python (3.6+). [Here](https://www.pythoncheatsheet.org/#Formatted-String-Literals-or-f-strings) you can read more about it.
 
 Any doubt or suggestion? Please leave a comment and have a nice day!
