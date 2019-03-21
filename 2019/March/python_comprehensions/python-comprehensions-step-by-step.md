@@ -1,4 +1,4 @@
-A *list comprehension* is a special syntax that let us create lists out of other lists in a concise way ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredible useful when dealing with numbers and one or two level of nested for loops. Beyond that, they become a little too harder to read.
+A *list comprehension* is a special syntax that let us create lists out of other lists in a concise way ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredible useful when dealing with numbers and one or two level of nested for loops. Beyond that, they become a little too hard to read.
 
 In this short Article we are going to make some for loops and convert them, step by step, into comprehension. If everything goes well, at the end and as a bonus, we will understand [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) comprehensions too 🤓.
 
@@ -40,7 +40,7 @@ names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 
 Notice how we inverted the order: First we defined what the output of the loop will be (`print(n)`), and then we created our variable and state the list we will work on (`for n in names`). Not that difficult right?
 
-## Creating a new list with a Comprehension
+## Creating a new List from a Comprehension
 
 This is how we create a new list from an existing collection with a for loop:
 
@@ -73,7 +73,7 @@ We can assign it to `new_list` because a list comprehension standard behavior is
 ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-Really nice.
+Really nice right?
 
 ## Adding Conditionals
 
@@ -101,9 +101,11 @@ print(new_list)
 # ['Charles', 'Carol']
 ```
 
+Isn't more readable this way? Comprehensions are the kings of short loops (!).
+
 ## Formating long List Comprehensions
 
-This time, we want our new list to have not only the names that start with a `C` but also those that end with an` e` and contain a `k`:
+This time, we want `new_list` to have not only the names that start with a `C` but also those that end with an` e` and contain a `k`:
 
 ```python
 names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -126,11 +128,11 @@ If you have learned the basics of list comprehensions... Congratulations! you ju
 
 
 ```python
-# set comprehension
+>>> # set comprehension
 >>> b = {"abc", "def"}
 >>> {s.upper() for s in b}
 {"ABC", "DEF}
-
+>>>
 >>> # dict comprehension
 >>> c = {'name': 'Pooka', 'age': 5}
 >>> {v, k for k, v in c.items()}
