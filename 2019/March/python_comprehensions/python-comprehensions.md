@@ -1,6 +1,6 @@
 A *list comprehension* is a special syntax that let us create lists out of other lists in a concise way ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredible useful when dealing with numbers and one or two level of nested for loops. Beyond that, they become a little too harder to read.
 
-In this short Article we are going to make some for loops and convert them, step by step, into comprehension. At the end and as a bonus, we will understand [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) comprehensions too 🧐
+In this short Article we are going to make some for loops and convert them, step by step, into comprehension. If everything goes well, at the end and as a bonus, we will understand [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) comprehensions too 🤓.
 
 ## Basics
 
@@ -23,7 +23,7 @@ In this loop we have:
 
 - `names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']` Defined the list we are going to work with.
 - `for n in names:` Created a variable (`n`) that will contain each of the items in the `names` list.
-- `print(n)` Done something with it. In this case, we just print the current value of `n`.
+- `print(n)` Done something with that variable. In this case, we just print the current value of `n`.
 
 In a list comprehension we start at the very end of the for loop:
 
@@ -120,7 +120,7 @@ new_list = [n for n in names if n.startswith('C')
             or n.endswith('e') or 'k' in n]
 ```
 
-## What about sets and dictionaries
+## sets and dict Comprehensions
 
 If you have learned the basics of list comprehensions... Congratulations! you just have done it with [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)!
 
