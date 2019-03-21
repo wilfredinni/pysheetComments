@@ -1,6 +1,6 @@
 A *list comprehension* is a special syntax that let us create lists out of other lists in a concise way ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions) ). They are incredible useful when dealing with numbers and one or two level of nested for loops. Beyond that, they become a little too harder to read.
 
-In this short article we are going to make some for loops and convert them, step by step, into comprehension. At the end and as a bonus, we will understand [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dict-comprehension) comprehensions.
+In this short Article we are going to make some for loops and convert them, step by step, into comprehension. At the end and as a bonus, we will understand [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) comprehensions.
 
 ## Basics
 
