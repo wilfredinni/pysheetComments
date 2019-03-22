@@ -1,6 +1,6 @@
 *List Comprehensions* are a special kind of syntax that let us create lists out of other lists in a concise way ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredible useful when dealing with numbers and with one or two level of nested *for loops*. Beyond that, they can become a little too hard to read.
 
-In this short article, we are going to make some for loops and rewrite them, step by step, into *comprehensions*. If everything goes well, at the end and as a bonus, we will know how to do the same with [sets](https://www.pythoncheatsheet.org/#sets) and [dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) 🤓.
+In this short article, we are going to make some for loops and rewrite them, step by step, into *comprehensions*. If everything goes well, at the end and as a bonus, we will know how to do the same with [sets](https://www.pythoncheatsheet.org/#sets) and [dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data).
 
 ## Basics
 
@@ -24,7 +24,7 @@ In this loop we have:
 - `for n in names:` Created a variable `n` that will contain each of the items in the `names` list.
 - `print(n)` Done something with that variable. In this case, we just print the current value of `n`.
 
-Now, to do the same but with a list comprehension we start at the very end of the for loop:
+Now, to do the same but with a *list comprehension* we start at the very end of the for loop:
 
 ```python
 names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -37,7 +37,7 @@ names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 # Carol
 ```
 
-Notice how we inverted the order: 
+Notice how we inverted the order:
 
 - First we defined what the output of the loop will be `[print(n) ...]`.
 - and then we created our variable and state the list (or [set](https://www.pythoncheatsheet.org/#Set-comprehension)/[dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)) we will work on `[... for n in names]`.
@@ -59,7 +59,7 @@ print(new_list)
 # ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-And this is how we do the same with a list comprehension:
+And this is how we do the same with a *list comprehension*:
 
 ```python
 names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -69,7 +69,7 @@ print(new_list)
 # ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-We can assign it to `new_list` because a list comprehension standard behavior is to return a list:
+We can assign it to `new_list` because a *list comprehension* standard behavior is to return a list:
 
 ```python
 >>> names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -77,7 +77,7 @@ We can assign it to `new_list` because a list comprehension standard behavior is
 ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-Comprehensions are so cool.
+*Comprehensions are so cool*.
 
 ## Adding Conditionals
 
@@ -95,7 +95,7 @@ print(new_list)
 # ['Charles', 'Carol']
 ```
 
-In a list comprehension, we add the if statement at its end:
+In a *list comprehension*, we add the if statement at its end:
 
 ```python
 names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -105,7 +105,7 @@ print(new_list)
 # ['Charles', 'Carol']
 ```
 
-Isn't more readable this way? Comprehensions are the kings of short loops (!).
+Isn't more readable this way? *Comprehensions are the kings of short loops* (!).
 
 ## Formating long List Comprehensions
 
@@ -130,19 +130,44 @@ new_list = [n for n in names if n.startswith('C')
 
 ## Set and Dict Comprehensions
 
-If you have learned the basics of list comprehensions... Congratulations! you just have done it with [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)!
+If you have learned the basics of *list comprehensions*... Congratulations! you just have done it with [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)!
 
+Set comprehension:
 
 ```python
->>> # set comprehension
->>> b = {"abc", "def"}
->>> {s.upper() for s in b}
-{"ABC", "DEF}
->>>
->>> # dict comprehension
->>> c = {'name': 'Pooka', 'age': 5}
->>> {v, k for k, v in c.items()}
-{'Pooka': 'name', 5: 'age'}
+my_set = {"abc", "def"}
+
+# Here, we create a new set with uppercase elements using a for loop
+new_set = set()
+for s in my_set:
+    new_set.add(s.upper())
+
+print(new_set)
+# {'DEF', 'ABC'}
+
+# The same, but with a set comprehension
+new_set = {s.upper() for s in my_set}
+print(new_set)
+# {'DEF', 'ABC'}
+```
+
+Dict comprehension:
+
+```python
+my_dict = {'name': 'Christine', 'age': 98}
+
+# A new dictionary out of a existing one using a for loop
+new_dict = {}
+for key, value in my_dict.items():
+    new_dict[key] = value
+
+print(new_dict)
+# {'name': 'Christine', 'age': 98}
+
+# Using a dict comprehension
+new_dict = {key: value for key, value in my_dict.items()}  # Notice the ":"
+print(new_dict)
+# {'name': 'Christine', 'age': 98}
 ```
 
 > Recommended Article: [Python Sets: What, Why and How ](https://www.pythoncheatsheet.org/blog/python-sets-what-why-how).
