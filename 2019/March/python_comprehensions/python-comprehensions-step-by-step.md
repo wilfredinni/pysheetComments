@@ -1,10 +1,10 @@
-A *list comprehension* is a special syntax that let us create lists out of other lists in a concise way ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredible useful when dealing with numbers and one or two level of nested for loops. Beyond that, they become a little too hard to read.
+*List Comprehensions* are a special kind of syntax that let us create lists out of other lists in a concise way ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredible useful when dealing with numbers and with one or two level of nested for loops. Beyond that, they can become a little too hard to read.
 
-In this short Article we are going to make some for loops and convert them, step by step, into comprehension. If everything goes well, at the end and as a bonus, we will understand [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) comprehensions too 🤓.
+In this short Article we are going to make some for loops and convert them, step by step, into *comprehensions*, and if everything goes well, at the end and as a bonus, we will understand [sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [dicts](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) comprehensions too 🤓.
 
 ## Basics
 
-I think the reason why list comprehensions are a bit difficult to understand at first is because they look... weird. Why? The ***order*** in which they are written is ***inverted*** with respect to a for loop.
+We already said it: a *List Comprehension* allows us to create lists out of other lists. And even when they are not too complex, they are still a bit difficult to understand at first because, I think, they look... weird. Why? Well, the order in which they are written is the ***opposite*** of what we usually see in a *for loop*.
 
 ```python
 names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
