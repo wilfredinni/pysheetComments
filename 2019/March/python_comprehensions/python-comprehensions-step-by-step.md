@@ -109,7 +109,7 @@ Isn't more readable this way? *Comprehensions are the kings of short loops* (!).
 
 ## Formating long List Comprehensions
 
-This time, we want `new_list` to have not only the names that start with a `C` but also those that end with an` e` and contain a `k`:
+This time, we want `new_list` to have not only the names that start with a `C` but also those that end with an `e` and contain a `k`:
 
 ```python
 names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
