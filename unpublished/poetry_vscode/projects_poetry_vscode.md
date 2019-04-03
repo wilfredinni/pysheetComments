@@ -26,7 +26,7 @@ This will create a `how-long` folder ready for us to start coding:
 
 Open the `pyproject.toml` file, it will look like this:
 
-```toml
+```
 [tool.poetry]
 name = "how-long"
 version = "0.1.0"
@@ -48,7 +48,7 @@ build-backend = "poetry.masonry.api"
 - In `[tool.poetry.dependencies]` is the python version we used to create the project (`python = "^3.7"`). Every package we install and use in production be listed in here.
 - By default, Poetry add `pytest` in `[tool.poetry.dev-dependencies]`. Every package listed in here will be used only in development, but not included when we publish or package. Well see later on why this is a good thing.
 
-![poetry-install-shell](poetry-install.png)
+![poetry-install-shell](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode/poetry-install.png)
 
 ## Dependency Management
 
