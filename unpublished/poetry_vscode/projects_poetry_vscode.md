@@ -48,7 +48,17 @@ build-backend = "poetry.masonry.api"
 - In `[tool.poetry.dependencies]` is the python version we used to create the project (`python = "^3.7"`). Every package we install and use in production be listed in here.
 - By default, Poetry add `pytest` in `[tool.poetry.dev-dependencies]`. Every package listed in here will be used only in development, but not included when we publish or package. Well see later on why this is a good thing.
 
+For now, let's create our Virtual Environment and install `pytest` along with it.
+
+```
+poetry install
+```
+
 ![poetry-install-shell](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode/poetry-install.png)
+
+After is done, a new file, `poetry.lock` will appear.
+
+> When Poetry has finished installing, it writes all of the packages and the exact versions of them that it downloaded to the poetry.lock file, locking the project to those specific versions. You should commit the poetry.lock file to your project repo so that all people working on the project are locked to the same versions of dependencies (more below).
 
 ## Dependency Management
 
@@ -67,10 +77,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxi
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
 
 ## Setting Up Poetry on VSCode
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
-
-## Our Project
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
 
