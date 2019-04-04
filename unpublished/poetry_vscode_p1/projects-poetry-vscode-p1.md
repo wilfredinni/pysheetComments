@@ -7,7 +7,7 @@ Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illu
 We can start a new Python project with Poetry by using the `poetry new <project_name>` command:
 
 ```
-poetry new how-long
+$ poetry new how-long
 ```
 
 This will create a basic project structure inside of `how-long` directory:
@@ -69,25 +69,25 @@ Every package added in here will be used only in development, this means that th
 Now, let's create our Virtual Environment and install *pytest* with the `poetry install` command:
 
 ```
-poetry install
+$ poetry install
 ```
 
 ![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode_p1/poetry-install.png)
 
-After is done, a new file, `poetry.lock` will appear.
+After is done, a new file, `poetry.lock` will be created.
 
 > When Poetry has finished installing, it writes all of the packages and the exact versions of them that it downloaded to the poetry.lock file, locking the project to those specific versions. You should commit the poetry.lock file to your project repo so that all people working on the project are locked to the same versions of dependencies (more below).
 
 ## Dependency Management
 
-We can add or remove dependencies directly from the *pyproject.toml* file and update our Virtual Environment with `poetry install`. But we will use the `add` command and avoid manually modifying it.
+We can add or remove dependencies directly from the *pyproject.toml* file and update our Virtual Environment with `poetry install`. But instead, we will use the `add` and `remove` commands to avoid manually modifying it.
 
 ### Adding Dependencies
 
-Well add the two packages to our project, *pendulum* and *coo*:
+Well add two packages to our project, *pendulum* and *coo*:
 
 ```
-poetry add pendulum coo
+$ poetry add pendulum coo
 ```
 
 ![poetry-add-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode_p1/poetry-add.png)
@@ -96,7 +96,29 @@ Open *pyproject.toml* and *poetry.lock* and see how they have updated.
 
 ### Adding Dev Dependencies
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+This dependencies will be available only during development, but Poetry will not include them when building and publishing your project. We already installed *pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
+
+```
+$ poetry add -D flake8 mypy
+```
+
+Oh! I forgot to add a formatter, i will go with [black](https://black.readthedocs.io/en/stable/):
+
+```
+$ poetry add -D black
+[ValueError]
+Could not find a matching version of package black
+
+add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
+```
+
+This error is because *black* is in a pre release state, so Poetry cannot find any stable version for us. But i really want it 😡, so lets install it anyway
+
+```
+$ poetry add -D black --allow-prereleases
+```
+
+![poetry-add-dev-command](poetry-add-dev.png)
 
 ### Removing Dependencies
 
