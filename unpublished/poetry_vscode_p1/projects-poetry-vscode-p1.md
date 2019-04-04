@@ -31,7 +31,7 @@ The *pyproject.toml* file contains all the details and dependencies of your proj
 [tool.poetry]
 name = "how-long"
 version = "0.1.0"
-description = "Simple decorator to measure a function execution time."
+description = "A simple decorator to measure a function execution time."
 authors = ["wilfredinni <carlos.w.montecinos@gmail.com>"]
 
 [tool.poetry.dependencies]
@@ -47,7 +47,7 @@ build-backend = "poetry.masonry.api"
 
 #### [tool.poetry]
 
-All the details (if something is missing, you can manually fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
+The details of our project. Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
 
 ```
 [tool.poetry]
@@ -58,15 +58,15 @@ readme = "README.rst"
 
 #### [tool.poetry.dependencies]
 
-First is the Python version we used to create the package. Basically, this says that our project will be compatible with Python 3.7 and up. And from now on, every package we install that is meant to be used in production will be listed here.
+First is the Python version. Basically, our project will be compatible with Python 3.7 and up. Also, from now on, every package we install that is meant to be used in production will be listed here.
 
 #### [tool.poetry.dev-dependencies]
 
-Every package added in here will be used only in development, this means that they will be not included when we publish our package. Also, By default Poetry includes [pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project.
+These packages are only for development and will not be included when we publish our project. Also, By default Poetry includes [Pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project later on.
 
 ### Poetry Install
 
-Now, let's create our Virtual Environment and install *pytest* with the `poetry install` command:
+Now, let's create our Virtual Environment and install *Pytest* with the `poetry install` command:
 
 ```
 $ poetry install
@@ -80,11 +80,11 @@ After is done, a new file, `poetry.lock` will be created.
 
 ## Dependency Management
 
-We can add or remove dependencies directly from the *pyproject.toml* file and update our Virtual Environment with `poetry install`. But instead, we will use the `add` and `remove` commands to avoid manually modifying it.
+We can add or remove dependencies directly from *pyproject.toml* and update our Virtual Environment with `poetry install`. But instead, we will use the `add` and `remove` commands to avoid manually modifying it.
 
 ### Adding Dependencies
 
-We will add two packages to our project, *pendulum* and *coo*:
+We'll add two packages to our project, *pendulum* and *coo*:
 
 ```
 $ poetry add pendulum coo
@@ -98,7 +98,7 @@ Open *pyproject.toml* and *poetry.lock* and see how they have updated.
 
 These dependencies will be available only during development. Poetry will not include them when building and publishing our project.
 
-We already installed *pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
+We already installed *Pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
 
 ```
 $ poetry add -D flake8 mypy
