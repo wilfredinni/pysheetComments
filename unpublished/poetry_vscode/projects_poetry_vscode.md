@@ -43,9 +43,9 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
 
-`[tool.poetry]`
+#### [tool.poetry]
 
-All the details of our project (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good thing:
+All the details (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good thing:
 
 ```
 [tool.poetry]
@@ -54,11 +54,11 @@ license = "MIT"
 readme = "README.rst"
 ```
 
-`[tool.poetry.dependencies]`
+#### [tool.poetry.dependencies]
 
 First is the Python version we used to create the package. Basically, this says that our project will be compatible with Python 3.7 and up. From now on, every package we install that is mean to be used in production will be listed in here.
 
-`[tool.poetry.dev-dependencies]`
+#### [tool.poetry.dev-dependencies]
 
 Every package added in here will be used only in development, this means that they will be not included when we publish our package. Also, By default Poetry includes *Pytest*, so we will use it to test our project.
 
