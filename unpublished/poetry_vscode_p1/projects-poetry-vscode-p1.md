@@ -118,7 +118,7 @@ This error is because *black* is in a pre release state, so Poetry cannot find a
 $ poetry add -D black --allow-prereleases
 ```
 
-![poetry-add-dev-command](poetry-add-dev.png)
+![poetry-add-dev-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode_p1/poetry-add-dev.png)
 
 ### Removing Dependencies
 
