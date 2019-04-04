@@ -1,31 +1,36 @@
-Python is a great programming language, but its native dependency management is not so good. While Others languages like JavaScript or Rust have robust official tools to handle the isolation and publishing of projects (yarn, npm, and cargo), Python has multiple options available.
+A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
 
-It's no surprise that Poetry is rapidly gaining track, is easy to use, fast and like npm and cargo, it allows you to build and publish your projects.
+In this series of articles, we will use [Poetry](https://poetry.eustace.io/), which is not only a tool for managing dependencies but also a project builder and publisher. And a very easy one if compared with the standard way.
 
-In this first part, we will use [Poetry](https://poetry.eustace.io/) to:
+In this first part we will:
 
 - Start a new project.
-- Create a virtual environment.
-- Add dependencies.
-- Add dev dependencies.
-- remove dependencies.
+- Create a Virtual Environment.
+- Manage our dependencies.
 
 And in the second part:
 
-- Add our virtual environment to [VSCode](https://code.visualstudio.com/).
-- Integrate Pytest with VSCode.
-- Configure Black and Flake8.
+- Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
+- Integrate *Pytest*, *Black* and *Flake8* with *VSCode* (dev dependencies installed in the fist part).
 - Write a simple library to measure a function execution time.
-- Build our project with Poetry
-- Publish our project on Pypi.
+- Build our project with *Poetry*.
+- Publish our project on *PyPI*.
 
 ## Starting a New Project
 
-We can start a new Python project with Poetry by using the `poetry new <project_name>` command:
+First things first, we need to install poetry:
+
+```
+$ pip install poetry
+```
+
+We can now start a new Python project with Poetry by using the `poetry new <project_name>` command:
 
 ```
 $ poetry new how-long
 ```
+
+> Note: For existing projects, you can use the `poetry init` command that will interactively prompt you to provide basic information about your package.
 
 This will create a basic project structure inside of `how-long` directory:
 
@@ -39,6 +44,8 @@ how-long
     ├── __init__.py
     └── test_how_long.py
 ```
+
+> Note: To be able publish your project, you need an available name. Use the [PyPI](https://pypi.org/) search tool for this.
 
 ### The pyproject.toml File
 
@@ -83,7 +90,7 @@ These packages are only for development and will not be included when we publish
 
 ## Creating a Virtual Environment
 
-Now, let's create our virtual environment and install *Pytest* with the `poetry install` command:
+Now, let's create our virtual Environment and install *Pytest* with the `poetry install` command:
 
 ```
 $ poetry install
@@ -155,4 +162,29 @@ $ poetry remove -D mypy
 
 ## Conclusion
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies to our project. The `pyproject.toml` file should look like this:
+
+```
+[tool.poetry]
+name = "how-long"
+version = "0.1.0"
+description = ""
+authors = ["'Carlos <'carlos.w.montecinos@gmail.com'>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pendulum = "^2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+flake8 = "^3.7"
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+```
+
+In the second part, we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8) and format (Black) our code inside the editor, integrate the Unit Tests and write and publish a sample library to *PyPI*.
+
+Any doubt or suggestion? Please leave a comment.
