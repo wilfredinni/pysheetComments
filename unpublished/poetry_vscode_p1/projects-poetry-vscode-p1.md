@@ -102,7 +102,7 @@ This dependencies will be available only during development, but Poetry will not
 $ poetry add -D flake8 mypy
 ```
 
-Oh! I forgot to add a formatter, i will go with [black](https://black.readthedocs.io/en/stable/):
+Oh! I forgot to add a formatter, I will go with [black](https://black.readthedocs.io/en/stable/):
 
 ```
 $ poetry add -D black
@@ -112,7 +112,7 @@ Could not find a matching version of package black
 add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
 ```
 
-This error is because *black* is in a pre release state, so Poetry cannot find any stable version for us. But i really want it 😡, so lets install it anyway
+This happens because *black* is in a pre release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway:
 
 ```
 $ poetry add -D black --allow-prereleases
@@ -122,8 +122,17 @@ $ poetry add -D black --allow-prereleases
 
 ### Removing Dependencies
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+You know what, i changed my mind, this project will use nor *coo* nor *mypy*. Well start removing *coo*, a normal dependency of our project:
 
+```
+$ poetry remove coo
+```
+
+Now *mypy* which is a dev dependency:
+
+```
+$ poetry remove -D mypy
+```
 
 ## Conclusion
 
