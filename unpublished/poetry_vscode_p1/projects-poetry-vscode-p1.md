@@ -18,21 +18,21 @@ And in the second part:
 
 ## Starting a New Project
 
-First things first, we need to install poetry:
+First, we need to install poetry:
 
 ```
 $ pip install poetry
 ```
 
-We can now start a new Python project with Poetry by using the `poetry new <project_name>` command. I will call it `how-long` and it's going to be a very simple library to measure a function execution time:
+We can now start a new Python project with by using the `poetry new <project_name>` command. I will call it `how-long` and is going to be a very simple library to measure a function execution time:
 
 ```
 $ poetry new how-long
 ```
 
-> Note: For existing projects, you can use the `poetry init` command that will interactively prompt you to provide basic information about your package.
+> Note: For existing projects, you can use the `poetry init` command and interactively create a *pyproject.toml*.
 
-This will create a basic project structure inside of `how-long` directory:
+The directory `how-long` is created and inside is a basic project structure:
 
 ```
 how-long
@@ -45,7 +45,7 @@ how-long
     └── test_how_long.py
 ```
 
-> Note: To be able publish your project, you need an available name. Use the [PyPI](https://pypi.org/) search tool for this.
+> Note: To be able to publish your project, you need an available name. Use the [PyPI](https://pypi.org/) search tool for this.
 
 ### The pyproject.toml File
 
@@ -128,7 +128,7 @@ We already installed *Pytest*, but we will also use [flake8](http://flake8.pycqa
 $ poetry add -D flake8 mypy
 ```
 
-Now that I think, I forgot to add a formatter. Let's with [black](https://black.readthedocs.io/en/stable/):
+Now that I think about it, I forgot to add a formatter. Let's go with [black](https://black.readthedocs.io/en/stable/):
 
 ```
 $ poetry add -D black
