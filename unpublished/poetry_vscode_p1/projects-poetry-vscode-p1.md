@@ -47,7 +47,7 @@ build-backend = "poetry.masonry.api"
 
 #### [tool.poetry]
 
-All the details (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
+All the details (if something is missing, you can manually fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
 
 ```
 [tool.poetry]
@@ -72,7 +72,7 @@ Now, let's create our Virtual Environment and install *pytest* with the `poetry 
 poetry install
 ```
 
-![poetry-install-shell](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode/poetry-install.png)
+![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode/poetry-install.png)
 
 After is done, a new file, `poetry.lock` will appear.
 
@@ -80,11 +80,19 @@ After is done, a new file, `poetry.lock` will appear.
 
 ## Dependency Management
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+We can add or remove dependencies directly from the *pyproject.toml* file and update our Virtual Environment with `poetry install`. But we will use the `add` command and avoid manually modifying it.
 
 ### Adding Dependencies
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+Well add the two packages to our project, *pendulum* and *coo*:
+
+```
+poetry add pendulum coo
+```
+
+![poetry-add-command](poetry-add.png)
+
+Open *pyproject.toml* and *poetry.lock* and see how they have updated.
 
 ### Adding Dev Dependencies
 
@@ -94,13 +102,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxi
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
 
-## Setting Up Poetry on VSCode
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
-
-## Publishing our Project to Pypi
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
 
 ## Conclusion
 
