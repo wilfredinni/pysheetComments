@@ -4,17 +4,16 @@ Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illu
 
 ## Creating a Virtual Environment
 
-We can start a new Python project with Poetry by using the `poetry init` command to create a `pyproject.toml` file interactively. This is a good option if you already have a working project and want to switch from `Pipenv` or other dependency tool. The other
-
-In this case, we will use `poetry new <project_name>` and create a basic project structure since we are starting from zero.
+We can start a new Python project with Poetry by using the `poetry new <project_name>` command:
 
 ```
 poetry new how-long
 ```
 
-This will create a `how-long` folder ready for us to start coding:
+This will create a basic project structure inside of `how-long` directory:
 
 ```
+how-long
 ├── README.rst
 ├── how_long
 │   └── __init__.py
@@ -24,7 +23,7 @@ This will create a `how-long` folder ready for us to start coding:
     └── test_how_long.py
 ```
 
-Open the `pyproject.toml` file, it will look like this:
+The `pyproject.toml` file contains all the details and dependencies of your project:
 
 ```
 [tool.poetry]
@@ -44,11 +43,26 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
 
-- Under `[tool.poetry]` are the details of our project. If something is missing, you can fill it.
-- In `[tool.poetry.dependencies]` is the python version we used to create the project (`python = "^3.7"`). Every package we install and use in production be listed in here.
-- By default, Poetry add `pytest` in `[tool.poetry.dev-dependencies]`. Every package listed in here will be used only in development, but not included when we publish or package. Well see later on why this is a good thing.
+`[tool.poetry]`
 
-For now, let's create our Virtual Environment and install `pytest` along with it.
+All the details of our project (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good thing:
+
+```
+[tool.poetry]
+...
+license = "MIT"
+readme = "README.rst"
+```
+
+`[tool.poetry.dependencies]`
+
+First is the Python version we used to create the package. Basically, this says that our project will be compatible with Python 3.7 and up. From now on, every package we install that is mean to be used in production will be listed in here.
+
+`[tool.poetry.dev-dependencies]`
+
+Every package added in here will be used only in development, this means that they will be not included when we publish our package. Also, By default Poetry includes *Pytest*, so we will use it to test our project.
+
+Now, let's create our Virtual Environment and install `pytest` along with it:
 
 ```
 poetry install
