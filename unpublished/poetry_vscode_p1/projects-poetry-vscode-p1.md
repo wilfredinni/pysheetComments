@@ -90,7 +90,7 @@ Well add the two packages to our project, *pendulum* and *coo*:
 poetry add pendulum coo
 ```
 
-![poetry-add-command](poetry-add.png)
+![poetry-add-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode_p1/poetry-add.png)
 
 Open *pyproject.toml* and *poetry.lock* and see how they have updated.
 
