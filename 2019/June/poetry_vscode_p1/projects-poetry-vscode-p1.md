@@ -1,12 +1,12 @@
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
 
-In this series of articles, we'll use [Poetry](https://poetry.eustace.io/), which not only is a tool for managing dependencies but also a project builder and publisher. We will also integrate our Virtual Environment with [VSCode](https://code.visualstudio.com/) and get the best experience when developing our projects.
+In this series of articles, we'll use [Poetry](https://poetry.eustace.io/) to manage our dependencies, build a simple project and publish it on [PyPI](https://pypi.org/).
 
 In this first part we will:
 
 - Start a new project.
 - Create a Virtual Environment.
-- Manage our dependencies.
+- Manage dependencies.
 
 And in the second part:
 
@@ -24,7 +24,7 @@ First, we need to install poetry:
 $ pip install poetry
 ```
 
-We can now start a new Python project with by using the `poetry new <project_name>` command. I will call it `how-long` and is going to be a very simple library to measure a function execution time:
+We can now start a new Python project by using the `poetry new <project_name>` command. I will call it `how-long` and is going to be a very simple library to measure a function execution time:
 
 ```
 $ poetry new how-long
@@ -49,7 +49,7 @@ how-long
 
 ### The pyproject.toml File
 
-The *pyproject.toml* file contains all the details and dependencies of your project:
+The *pyproject.toml* file will manage the details and dependencies of your project:
 
 ```
 [tool.poetry]
@@ -185,6 +185,6 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 ```
 
-In the second part, we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8) and format (Black) our code inside the editor, integrate the Unit Tests and write and publish a sample library to *PyPI*.
+In the second part, we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally we will write and publish a sample library to *PyPI*.
 
 Any doubt or suggestion? Please leave a comment.
