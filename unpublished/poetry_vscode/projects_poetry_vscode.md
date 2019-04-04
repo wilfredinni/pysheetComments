@@ -25,7 +25,7 @@ how-long
 
 ### The pyproject.toml File
 
-The `pyproject.toml` file contains all the details and dependencies of your project:
+The *pyproject.toml* file contains all the details and dependencies of your project:
 
 ```
 [tool.poetry]
@@ -47,7 +47,7 @@ build-backend = "poetry.masonry.api"
 
 #### [tool.poetry]
 
-All the details (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good thing:
+All the details (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
 
 ```
 [tool.poetry]
@@ -66,7 +66,7 @@ Every package added in here will be used only in development, this means that th
 
 ### Poetry Install
 
-Now, let's create our Virtual Environment and add `pytest` to it with the `poetry install` command:
+Now, let's create our Virtual Environment and install *pytest* with the `poetry install` command:
 
 ```
 poetry install
