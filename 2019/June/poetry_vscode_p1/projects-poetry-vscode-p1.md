@@ -11,7 +11,7 @@ In this first part we will:
 And in the second part:
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
-- Integrate *Pytest*, *Black* and *Flake8* with *VSCode* (dev dependencies installed in the fist part).
+- Integrate *Pytest*, *Black* and *Flake8* with the editor (dev dependencies installed in the fist part).
 - Write a sample library.
 - Build our project with *Poetry*.
 - Publish our project on *PyPI*.
@@ -108,7 +108,7 @@ One way to add or remove dependencies is to directly edit *pyproject.toml* and r
 
 ### Adding Dependencies
 
-We'll add two packages to our project, *pendulum* and *coo*:
+Let's add two packages to our project, *pendulum* and *coo*:
 
 ```
 $ poetry add pendulum coo
@@ -120,7 +120,7 @@ Open *pyproject.toml* and *poetry.lock* and see how they have updated.
 
 ### Adding Dev Dependencies
 
-These dependencies will be available only during development. Poetry will not include them when building and publishing our project.
+These dependencies will be available only during development, Poetry will not include them when building and publishing our project.
 
 We already installed *Pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
 
@@ -128,7 +128,7 @@ We already installed *Pytest*, but we will also use [flake8](http://flake8.pycqa
 $ poetry add -D flake8 mypy
 ```
 
-Now that I think about it, I forgot to add a formatter. Let's go with [black](https://black.readthedocs.io/en/stable/):
+Now that I think about it, I forgot to add a formatter. We'll go with [black](https://black.readthedocs.io/en/stable/):
 
 ```
 $ poetry add -D black
@@ -138,7 +138,7 @@ Could not find a matching version of package black
 add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
 ```
 
-This happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway using the `--allow-prereleases` flag:
+This error happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway using the `--allow-prereleases` flag:
 
 ```
 $ poetry add -D black --allow-prereleases
