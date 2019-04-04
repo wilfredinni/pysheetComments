@@ -84,7 +84,7 @@ We can add or remove dependencies directly from the *pyproject.toml* file and up
 
 ### Adding Dependencies
 
-Well add two packages to our project, *pendulum* and *coo*:
+We will add two packages to our project, *pendulum* and *coo*:
 
 ```
 $ poetry add pendulum coo
@@ -96,7 +96,9 @@ Open *pyproject.toml* and *poetry.lock* and see how they have updated.
 
 ### Adding Dev Dependencies
 
-This dependencies will be available only during development, but Poetry will not include them when building and publishing your project. We already installed *pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
+These dependencies will be available only during development. Poetry will not include them when building and publishing our project.
+
+We already installed *pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
 
 ```
 $ poetry add -D flake8 mypy
@@ -112,7 +114,7 @@ Could not find a matching version of package black
 add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
 ```
 
-This happens because *black* is in a pre release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway:
+This happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway:
 
 ```
 $ poetry add -D black --allow-prereleases
@@ -122,7 +124,7 @@ $ poetry add -D black --allow-prereleases
 
 ### Removing Dependencies
 
-You know what, i changed my mind, this project will use nor *coo* nor *mypy*. Well start removing *coo*, a normal dependency of our project:
+You know what, I changed my mind, this project will use nor *coo* nor *mypy*. Start by removing *coo*, a normal dependency of our project:
 
 ```
 $ poetry remove coo
