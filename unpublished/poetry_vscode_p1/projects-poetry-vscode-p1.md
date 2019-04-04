@@ -1,6 +1,6 @@
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
 
-In this series of articles, we will use [Poetry](https://poetry.eustace.io/), which is not only a tool for managing dependencies but also a project builder and publisher. And a very easy one if compared with the standard way.
+In this series of articles, we'll use [Poetry](https://poetry.eustace.io/), which not only is a tool for managing dependencies but also a project builder and publisher. We will also integrate our Virtual Environment with [VSCode](https://code.visualstudio.com/) and get the best experience when developing our projects.
 
 In this first part we will:
 
@@ -12,7 +12,7 @@ And in the second part:
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
 - Integrate *Pytest*, *Black* and *Flake8* with *VSCode* (dev dependencies installed in the fist part).
-- Write a simple library to measure a function execution time.
+- Write a sample library.
 - Build our project with *Poetry*.
 - Publish our project on *PyPI*.
 
@@ -24,7 +24,7 @@ First things first, we need to install poetry:
 $ pip install poetry
 ```
 
-We can now start a new Python project with Poetry by using the `poetry new <project_name>` command:
+We can now start a new Python project with Poetry by using the `poetry new <project_name>` command. I will call it `how-long` and it's going to be a very simple library to measure a function execution time:
 
 ```
 $ poetry new how-long
@@ -86,7 +86,7 @@ First is the Python version. Basically, our project will be compatible with Pyth
 
 #### [tool.poetry.dev-dependencies]
 
-These packages are only for development and will not be included when we publish our project. Also, By default Poetry includes [Pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project later on.
+These packages are only for development and will not be included when we publish our project. By default Poetry includes [Pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project later on.
 
 ## Creating a Virtual Environment
 
@@ -104,7 +104,7 @@ After is done, a new file, `poetry.lock` will be created.
 
 ## Dependency Management
 
-We can add or remove dependencies directly from *pyproject.toml* and update our Virtual Environment with `poetry install`. But instead, we will use the `add` and `remove` commands to avoid manually modifying it.
+One way to add or remove dependencies is to directly edit *pyproject.toml* and run `poetry install` to apply the changes. We instead will use the `add` and `remove` commands to avoid manual modifications.
 
 ### Adding Dependencies
 
@@ -128,7 +128,7 @@ We already installed *Pytest*, but we will also use [flake8](http://flake8.pycqa
 $ poetry add -D flake8 mypy
 ```
 
-Oh! I forgot to add a formatter, I will go with [black](https://black.readthedocs.io/en/stable/):
+Now that I think, I forgot to add a formatter. Let's with [black](https://black.readthedocs.io/en/stable/):
 
 ```
 $ poetry add -D black
@@ -138,7 +138,7 @@ Could not find a matching version of package black
 add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
 ```
 
-This happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway:
+This happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway using the `--allow-prereleases` flag:
 
 ```
 $ poetry add -D black --allow-prereleases
