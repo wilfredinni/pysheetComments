@@ -23,6 +23,8 @@ how-long
     └── test_how_long.py
 ```
 
+### The pyproject.toml File
+
 The `pyproject.toml` file contains all the details and dependencies of your project:
 
 ```
@@ -45,7 +47,7 @@ build-backend = "poetry.masonry.api"
 
 #### [tool.poetry]
 
-All the details (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good thing:
+All the details (if something is missing, you can fill it). Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good thing:
 
 ```
 [tool.poetry]
@@ -56,13 +58,15 @@ readme = "README.rst"
 
 #### [tool.poetry.dependencies]
 
-First is the Python version we used to create the package. Basically, this says that our project will be compatible with Python 3.7 and up. From now on, every package we install that is mean to be used in production will be listed in here.
+First is the Python version we used to create the package. Basically, this says that our project will be compatible with Python 3.7 and up. And from now on, every package we install that is meant to be used in production will be listed here.
 
 #### [tool.poetry.dev-dependencies]
 
-Every package added in here will be used only in development, this means that they will be not included when we publish our package. Also, By default Poetry includes *Pytest*, so we will use it to test our project.
+Every package added in here will be used only in development, this means that they will be not included when we publish our package. Also, By default Poetry includes [pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project.
 
-Now, let's create our Virtual Environment and install `pytest` along with it:
+### Poetry Install
+
+Now, let's create our Virtual Environment and add `pytest` to it with the `poetry install` command:
 
 ```
 poetry install
