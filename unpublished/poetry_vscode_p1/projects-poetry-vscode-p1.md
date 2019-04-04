@@ -1,8 +1,25 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+Python is a great programming language, but its native dependency management is not so good. While Others languages like JavaScript or Rust have robust official tools to handle the isolation and publishing of projects (yarn, npm, and cargo), Python has multiple options available.
 
-Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+It's no surprise that Poetry is rapidly gaining track, is easy to use, fast and like npm and cargo, it allows you to build and publish your projects.
 
-## Creating a Virtual Environment
+In this first part, we will use [Poetry](https://poetry.eustace.io/) to:
+
+- Start a new project.
+- Create a virtual environment.
+- Add dependencies.
+- Add dev dependencies.
+- remove dependencies.
+
+And in the second part:
+
+- Add our virtual environment to [VSCode](https://code.visualstudio.com/).
+- Integrate Pytest with VSCode.
+- Configure Black and Flake8.
+- Write a simple library to measure a function execution time.
+- Build our project with Poetry
+- Publish our project on Pypi.
+
+## Starting a New Project
 
 We can start a new Python project with Poetry by using the `poetry new <project_name>` command:
 
@@ -64,9 +81,9 @@ First is the Python version. Basically, our project will be compatible with Pyth
 
 These packages are only for development and will not be included when we publish our project. Also, By default Poetry includes [Pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project later on.
 
-### Poetry Install
+## Creating a Virtual Environment
 
-Now, let's create our Virtual Environment and install *Pytest* with the `poetry install` command:
+Now, let's create our virtual environment and install *Pytest* with the `poetry install` command:
 
 ```
 $ poetry install
