@@ -72,7 +72,7 @@ Now, let's create our Virtual Environment and install *pytest* with the `poetry 
 poetry install
 ```
 
-![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode/poetry-install.png)
+![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/unpublished/poetry_vscode_p1/poetry-install.png)
 
 After is done, a new file, `poetry.lock` will appear.
 
