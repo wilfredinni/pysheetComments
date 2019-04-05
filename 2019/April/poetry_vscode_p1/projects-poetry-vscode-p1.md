@@ -49,7 +49,7 @@ how-long
 
 ### The pyproject.toml File
 
-The *pyproject.toml* file will manage the details and dependencies of your project:
+The *pyproject.toml* file will manage the details and dependencies of the project:
 
 ```
 [tool.poetry]
@@ -71,7 +71,7 @@ build-backend = "poetry.masonry.api"
 
 #### [tool.poetry]
 
-The details of our project. Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
+The details. Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
 
 ```
 [tool.poetry]
@@ -82,7 +82,7 @@ readme = "README.rst"
 
 #### [tool.poetry.dependencies]
 
-First is the Python version. Basically, our project will be compatible with Python 3.7 and up. Also, from now on, every package we install that is meant to be used in production will be listed here.
+First is the Python version. Basically, this project will be compatible with Python 3.7 and up. Also, from now on, every package we install that is meant to be used in production will be listed here.
 
 #### [tool.poetry.dev-dependencies]
 
@@ -90,7 +90,7 @@ These packages are only for development and will not be included when we publish
 
 ## Creating a Virtual Environment
 
-Now, let's create our virtual Environment and install *Pytest* with the `poetry install` command:
+Now, let's create a virtual Environment and install *Pytest* with the `poetry install` command:
 
 ```
 $ poetry install
@@ -108,7 +108,7 @@ One way to add or remove dependencies is to directly edit *pyproject.toml* and r
 
 ### Adding Dependencies
 
-Let's add two packages to our project, *pendulum* and *coo*:
+Let's add two packages to the project, *pendulum* and *coo*:
 
 ```
 $ poetry add pendulum coo
@@ -120,7 +120,7 @@ Open *pyproject.toml* and *poetry.lock* and see how they have updated.
 
 ### Adding Dev Dependencies
 
-These dependencies will be available only during development, Poetry will not include them when building and publishing our project.
+These dependencies will be available only during development, Poetry will not include them when building and publishing the project.
 
 We already installed *Pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
 
