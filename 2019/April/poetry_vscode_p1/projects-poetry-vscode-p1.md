@@ -162,7 +162,7 @@ $ poetry remove -D mypy
 
 ## Conclusion
 
-In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies to our project busing the following commands:
+In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies to our project using the following commands:
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
@@ -173,30 +173,6 @@ In this first part, we have started a new project, created a Virtual Environment
 | `poetry add -D [package-name]`    | Add a dev package to a Virtual Environment.            |
 | `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
 | `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
-
-
-And the `pyproject.toml` file looks like this:
-
-```
-[tool.poetry]
-name = "how-long"
-version = "0.1.0"
-description = ""
-authors = ["'Carlos <'carlos.w.montecinos@gmail.com'>"]
-
-[tool.poetry.dependencies]
-python = "^3.7"
-pendulum = "^2.0"
-
-[tool.poetry.dev-dependencies]
-pytest = "^3.0"
-flake8 = "^3.7"
-black = {version = "^18.3-alpha.0",allows-prereleases = true}
-
-[build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
-```
 
 In the second part, we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally we will write and publish a sample library to *PyPI*.
 
