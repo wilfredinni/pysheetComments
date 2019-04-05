@@ -162,7 +162,20 @@ $ poetry remove -D mypy
 
 ## Conclusion
 
-In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies to our project. The `pyproject.toml` file should look like this:
+In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies to our project by using the following commands:
+
+| Command                           | Description                                            |
+| --------------------------------- | ------------------------------------------------------ |
+| `poetry new [package-name]`       | Start a new Python Project.                            |
+| `poetry init`                     | Create a *pyproject.toml* file interactively.          |
+| `poetry install`                  | Install the packages inside the *pyproject.toml* file. |
+| `poetry add [package-name]`       | Add a package to a Virtual Environment.                |
+| `poetry add -D [package-name]`    | Add a dev package to a Virtual Environment.            |
+| `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
+| `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
+
+
+And the `pyproject.toml` file looks like this:
 
 ```
 [tool.poetry]
