@@ -162,7 +162,7 @@ $ poetry remove -D mypy
 
 ## Conclusion
 
-In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies to our project by using the following commands:
+In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies to our project busing the following commands:
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
