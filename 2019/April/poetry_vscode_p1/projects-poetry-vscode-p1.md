@@ -14,7 +14,7 @@ And in the second part:
 - Integrate *Pytest*, *Black* and *Flake8* with the editor (dev dependencies installed in the fist part).
 - Write a sample library.
 - Build our project with *Poetry*.
-- Publish our project on *PyPI*.
+- Publish it on *PyPI*.
 
 ## Starting a New Project
 
@@ -24,7 +24,7 @@ First, we need to install poetry:
 $ pip install poetry
 ```
 
-We can now start a new Python project by using the `poetry new <project_name>` command. I will call it `how-long` and is going to be a very simple library to measure a function execution time:
+We can now start a new Python project by using the `poetry new <project_name>` command. I will call it ***how-long*** and is going to be a very simple library to measure a function execution time:
 
 ```
 $ poetry new how-long
@@ -32,13 +32,13 @@ $ poetry new how-long
 
 > Note: For existing projects, you can use the `poetry init` command and interactively create a *pyproject.toml*.
 
-The directory `how-long` is created and inside is a basic project structure:
+The directory *how-long* is created and inside is a basic project structure:
 
 ```
 how-long
 ├── README.rst
 ├── how_long
-│   └── __init__.py
+│   └── __init__.py
 ├── pyproject.toml
 └── tests
     ├── __init__.py
@@ -49,7 +49,7 @@ how-long
 
 ### The pyproject.toml File
 
-The *pyproject.toml* file will manage the details and dependencies of the project:
+The **pyproject.toml** file will manage the details and dependencies of the project:
 
 ```
 [tool.poetry]
@@ -138,7 +138,7 @@ Could not find a matching version of package black
 add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
 ```
 
-This error happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so lets install it anyway using the `--allow-prereleases` flag:
+This error happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so let's install it anyway using the `--allow-prereleases` flag:
 
 ```
 $ poetry add -D black --allow-prereleases
@@ -174,6 +174,6 @@ In this first part, we have started a new project, created a Virtual Environment
 | `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
 | `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
 
-In the second part, we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally we will write and publish a sample library to *PyPI*.
+In the second part, we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, we will write and publish a sample library to *PyPI*.
 
 Any doubt or suggestion? Please leave a comment.
