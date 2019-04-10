@@ -1,6 +1,6 @@
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
 
-In this series of articles, we'll use [Poetry](https://poetry.eustace.io/) to manage our dependencies, build a simple project and publish it on [PyPI](https://pypi.org/).
+In this series of articles, we'll use [Poetry](https://poetry.eustace.io/) to manage our dependencies, build a simple project and, with a single command, publish it on [PyPI](https://pypi.org/).
 
 In this first part we will:
 
