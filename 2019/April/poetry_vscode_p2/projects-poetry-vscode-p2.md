@@ -24,7 +24,7 @@ Before we start, make sure you have installed [VSCode](https://code.visualstudio
 
 A few days have passed since the first part, so it may be a good idea to check for new versions of the dependencies we installed. Open your terminal and navigate inside your project folder and type the `poetry update` command:
 
-![poetry update](update.png)
+![poetry update](img/update.png)
 
 Ok, to this day there are no new versions available.
 
@@ -37,15 +37,15 @@ $ code .
 
 The first command, `poetry shell`, will spawn us inside our virtual environment, and `code .` will open the current folder inside VSCode.
 
-![vscode](vscode.png)
+![vscode](img/vscode.png)
 
 Navigate to the *how-long* (or the folder with your project name) using the left panel and along side to the `__init__.py`, create a `how-long.py` file. In the bottom left corner you'll see the current Python Environment:
 
-![python version](python-code.png)
+![python version](img/python-code.png)
 
 Click it and a list of available Python installation will display. Choose the one that has the name of your project in it:
 
-![choose python](choose-environment.png)
+![choose python](img/choose-environment.png)
 
 Now, let's integrate our dev dependencies, *Flake8*, *Black*, and *Pytest* to Visual Studio Code.
 
@@ -57,11 +57,11 @@ By default, the Python extension comes with *Pylint* enabled, which is powerful 
 
 If you make a change to any Python file and save it, in the bottom right corner a popup message will display:
 
-![flake8](select-linter.png)
+![flake8](img/select-linter.png)
 
 Click on select linter and choose *flake8* from the list. Now, VSCode will tell us our syntax style problems, in green or red depending the severity of the error, both with a nice description of what is wrong:
 
-![linting](linting.png)
+![linting](img/linting.png)
 
 Seems like we have two problems: we are missing a blank line at the end of our file (style) and we forgot to write our *Hello, World* inside quotes. Fix these errors and all the warnings will disappear.
 
@@ -71,7 +71,7 @@ Seems like we have two problems: we are missing a blank line at the end of our f
 
 Hold `shift + cmd + p` on Mac, or `shift + ctrl + p` on Windows or Linux to open the Command Palette and type *format document* and enter. A new popup message will appear:
 
-![black formatter popup](format-popup.png)
+![black formatter popup](img/format-popup.png)
 
 Select *Use Black*. Now copy this poorly formated code into your python file:
 
@@ -84,7 +84,7 @@ What an ugly and full of errors piece of s***... code. Try formating it again an
 
 Another thing we can do is to configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd + ,` on Mac or `ctrl + ,` on Windows and Linux to open the Settings. Make sure you are in the *Workspace Settings*, search for *format on save* and activate the checkbox:
 
-![format on save](format-on-save.png)
+![format on save](img/format-on-save.png)
 
 Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allowed by *Flake8*, so to avoid conflicts, open `.vscode` folder and add the following at the end of the file:
 
@@ -97,7 +97,7 @@ Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allow
 }
 ```
 
-![black-settings](black-settings.png)
+![black-settings](img/black-settings.png)
 
 ### Pytest
 
@@ -124,23 +124,23 @@ $ pytest
 
 The Output will look like this:
 
-![pytest](pytest-terminal.png)
+![pytest](img/pytest-terminal.png)
 
-Ok, everything is fine. Open your Command Palette `cmd/ctrl + p`, write *unit* and select *Python: Configure Unit Tests*, select *pytest* and finaly the directory in which the test are stored, *tests* in our case.
+Ok, everything is fine. Open your Command Palette `cmd/ctrl + p`, write *unit* and select *Python: Configure Unit Tests*, select *pytest* and finally the directory in which the test are stored, *tests* in our case.
 
 Three things happened:
 
 - A new button appeared at the status bar: *Run Tests*. This is the same as typing *pytest* in the terminal. Press it and select *Run All Unit Tests*. When finished, it will inform you the number of tests that passed and the tests that not.
 
-    ![test status bar](test-statusbar.png)
+    ![test status bar](img/test-statusbar.png)
 
 - A new icon at the left bar. If you click on it a panel displaying all the test will appear. This allows you to select a specific test to run.
 
-    ![test side panel](test-side-panel.png)
+    ![test side panel](img/test-side-panel.png)
 
 - Inside the the test file a new menu will be displayed before every test: a check icon will appear if is ok, and an *x* other wise. It also allow you to run specific tests.
 
-    ![test inline](test-inline.png)
+    ![test inline](img/test-inline.png)
 
 ## Conclusion
 
