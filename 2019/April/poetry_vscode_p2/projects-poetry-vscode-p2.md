@@ -10,15 +10,15 @@ In the [fist part](https://www.pythoncheatsheet.org/blog/python-projects-with-po
 | `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
 | `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
 
-And in this second and last part we'll:
+In this second part we'll:
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
-- Integrate *Pytest*, *Black* and *Flake8* with the editor (dev dependencies installed in the fist part).
-- Write a sample library.
-- Build our project with *Poetry*.
-- Publish our project on *PyPI*.
+- Integrate our dev dependencies with the editor.
+  - *Flak8*
+  - *Black*
+  - *Pytest*
 
-Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the first part of this article.
+Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the [fist part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1) of this article.
 
 ## Setting Up Poetry on VSCode
 
@@ -88,7 +88,7 @@ Another thing we can do is to configure VSCode so that every time we save, *Blac
 
 Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allowed by *Flake8*, so to avoid conflicts, open `.vscode` folder and add the following at the end of the file:
 
-```
+```json
 {
     ...
     "python.linting.flake8Args": [
@@ -101,7 +101,46 @@ Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allow
 
 ### Pytest
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+If you are serious about programming, it is crucial for you to learn how to test your projects. It's an incredibly useful skill that will allow you to write and deliver programs with confidence by reducing the possibility of catastrophic bugs appearing after shipping.
+
+[Pytest](https://docs.pytest.org/en/latest/) is a very popular and user friendly framework for writing tests. We [already installed](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1#Dependency-Management) it so we will now integrate it with *VSCode*.
+
+Open the *tests* folder and select the `test_how_long.py` file. *Poetry* already give us our first test:
+
+```python
+# test_how_long.py
+from how_long import __version__
+
+
+def test_version():
+    assert __version__ == '0.1.0'
+```
+
+This test import the `__version__` variable from the `__init__.py` file that is inside the *how_long* folder and assert that the current version is *0.1.0*. Open your integrated terminal by going to *Terminal > New Terminal* and type:
+
+```
+$ pytest
+```
+
+The Output will look like this:
+
+![pytest](pytest-terminal.png)
+
+Ok, everything is fine. Open your Command Palette `cmd/ctrl + p`, write *unit* and select *Python: Configure Unit Tests*, select *pytest* and finaly the directory in which the test are stored, *tests* in our case.
+
+Three things happened:
+
+- A new button appeared at the status bar: *Run Tests*. This is the same as typing *pytest* in the terminal. Press it and select *Run All Unit Tests*. When finished, it will inform you the number of tests that passed and the tests that not.
+
+    ![test status bar](test-statusbar.png)
+
+- A new icon at the left bar. If you click on it a panel displaying all the test will appear. This allows you to select a specific test to run.
+
+    ![test side panel](test-side-panel.png)
+
+- Inside the the test file a new menu will be displayed before every test: a check icon will appear if is ok, and an *x* other wise. It also allow you to run specific tests.
+
+    ![test inline](test-inline.png)
 
 ## Conclusion
 
