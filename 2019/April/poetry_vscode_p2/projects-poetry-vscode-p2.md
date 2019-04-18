@@ -20,7 +20,7 @@ In this second part we'll:
 
 Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the [first part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1) of this article.
 
-## Setting Up Poetry on VSCode 
+## Setting Up Poetry on VSCode
 
 A few days have passed since the first part, so it may be a good idea to check for new versions of our dependencies. Open your terminal and navigate inside your project folder and type the `poetry update` command:
 
@@ -49,7 +49,7 @@ Click it and a list of available Python Environments will display. Choose the on
 
 Now, let's integrate our dev dependencies, *Flake8*, *Black*, and *Pytest* to Visual Studio Code.
 
-### Flake8
+## Flake8
 
 *Flake8* will provide our projects with *linting* capabilities. In other words, syntax and style errors, and thanks to VSCode, we will know them as we type.
 
@@ -63,7 +63,7 @@ Click on select linter and choose *flake8* from the list. Now, VSCode will tell 
 
 Seems like we have two problems: we are missing a blank line at the end of our file (style) and we forgot to add quotes to our *Hello, World*. Fix these errors and all the warnings will disappear.
 
-### Black
+## Black
 
 *Black* is a code formatter, a tool that will look at our code and automatically format it in compliance with the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide, the same *PEP* that uses *Flake8* to lint our style errors.
 
@@ -97,7 +97,7 @@ Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allow
 
 ![black-settings](img/black-settings.png)
 
-### Pytest
+## Pytest
 
 If you are serious about programming, it is crucial for you to learn how to test your projects. It's an incredibly useful skill that will allow you to write and deliver programs with confidence by reducing the possibility of catastrophic bugs appearing after shipping.
 
@@ -146,4 +146,19 @@ Three things happened:
 
 ## Conclusion
 
-This was originally a two part article, 
+So far we have:
+
+- Started a new project and created a Virtual Environment with *Poetry*.
+- Added, deleted and updated dependencies.
+- Added our Virtual Environment to VSCode.
+- Configured *Flake8* to lint our code as we write.
+- Used *Black* as the formatter of our project.
+- And included *Pytest* to run our tests in a visual way.
+
+In the last part we will:
+
+- Write a sample library.
+- Build our project with *Poetry*.
+- Publish it on *PyPI*.
+
+That's it, Have a nice day!

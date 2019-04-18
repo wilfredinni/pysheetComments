@@ -16,7 +16,7 @@ In the second part:
   - *Black*
   - *Pytest*
 
-And finally:
+And finally, in a third part we'll:
 
 - Write a sample library.
 - Build our project with *Poetry*.
