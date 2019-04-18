@@ -36,7 +36,7 @@ $ poetry shell
 $ code .
 ```
 
-The first command, `poetry shell`, will spawn us inside our virtual environment, and `code .` will open the current folder inside VSCode.
+The first command, `poetry shell`, will spawn us inside our virtual environment, and `code .` will open the current folder inside *VSCode*.
 
 ![vscode](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/vscode.png)
 
@@ -58,11 +58,11 @@ By default, the Python extension comes with *Pylint* enabled, which is powerful 
 
 ![flake8](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/select-linter.png)
 
-Click on select linter and choose *flake8* from the list. Now, VSCode will tell us our *syntax* and *style* problems, in green or red depending on its severity, always with a nice description of what is wrong:
+Click on *select linter* and choose *flake8* from the list. Now, *VSCode* will tell us our *syntax* and *style* problems, in green or red depending on its severity, always with a nice description of what is wrong:
 
 ![linting](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/linting.png)
 
-Seems like we have two problems: we are missing a blank line at the end of our file (style) and we forgot to add quotes to our *Hello, World!* string. Fix then and see all warnings disappear.
+Seems like we have two problems: we are missing a blank line at the end of our file (style) and we forgot to add quotes to our *Hello, World!* string (syntax). Fix then and see all warnings disappear.
 
 ## Black
 
@@ -85,7 +85,7 @@ Another thing we can do is to configure VSCode so that every time we save, *Blac
 
 ![format on save](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-on-save.png)
 
-Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allowed by *Flake8*, so to avoid conflicts, open *.vscode* folder and add the following at the end of the *settings.json* file:
+Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allowed by *Flake8*, so to avoid conflicts, open the *.vscode* folder and add the following at the end of the *settings.json* file:
 
 ```json
 {
