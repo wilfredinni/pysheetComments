@@ -1,4 +1,4 @@
-In the [fist part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1), we learned what is the `pyproject.toml` file and how to use it, used [Poetry](https://poetry.eustace.io/) to start a new project, create a Virtual Environment and add and remove dependencies. We did all of this with the following commands:
+In the [first part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1), we learned what is the `pyproject.toml` file and how to use it, used [Poetry](https://poetry.eustace.io/) to start a new project, create a Virtual Environment and add and remove dependencies. We did all of this with the following commands:
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
@@ -14,15 +14,15 @@ In this second part we'll:
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
 - Integrate our dev dependencies with the editor.
-  - *Flak8*
+  - *Flake8*
   - *Black*
   - *Pytest*
 
-Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the [fist part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1) of this article.
+Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the [first part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1) of this article.
 
-## Setting Up Poetry on VSCode
+## Setting Up Poetry on VSCode 
 
-A few days have passed since the first part, so it may be a good idea to check for new versions of the dependencies we installed. Open your terminal and navigate inside your project folder and type the `poetry update` command:
+A few days have passed since the first part, so it may be a good idea to check for new versions of our dependencies. Open your terminal and navigate inside your project folder and type the `poetry update` command:
 
 ![poetry update](img/update.png)
 
@@ -39,11 +39,11 @@ The first command, `poetry shell`, will spawn us inside our virtual environment,
 
 ![vscode](img/vscode.png)
 
-Navigate to the *how-long* (or the folder with your project name) using the left panel and along side to the `__init__.py`, create a `how-long.py` file. In the bottom left corner you'll see the current Python Environment:
+Open the *how-long* folder (or the one with your project name) using the left panel and alongside to `__init__.py`, create a `how-long.py` file. In the bottom left corner you'll see the current Python Environment:
 
 ![python version](img/python-code.png)
 
-Click it and a list of available Python installation will display. Choose the one that has the name of your project in it:
+Click it and a list of available Python Environments will display. Choose the one that has the name of your project in it:
 
 ![choose python](img/choose-environment.png)
 
@@ -53,40 +53,38 @@ Now, let's integrate our dev dependencies, *Flake8*, *Black*, and *Pytest* to Vi
 
 *Flake8* will provide our projects with *linting* capabilities. In other words, syntax and style errors, and thanks to VSCode, we will know them as we type.
 
-By default, the Python extension comes with *Pylint* enabled, which is powerful but complex to configure.
-
-If you make a change to any Python file and save it, in the bottom right corner a popup message will display:
+By default, the Python extension comes with *Pylint* enabled, which is powerful but complex to configure. To change to *Flake8* make a change to any Python file and save it, in the bottom right corner a popup message will show:
 
 ![flake8](img/select-linter.png)
 
-Click on select linter and choose *flake8* from the list. Now, VSCode will tell us our syntax style problems, in green or red depending the severity of the error, both with a nice description of what is wrong:
+Click on select linter and choose *flake8* from the list. Now, VSCode will tell us our syntax style problems, in green or red depending on its severity, always with a nice description of what is wrong:
 
 ![linting](img/linting.png)
 
-Seems like we have two problems: we are missing a blank line at the end of our file (style) and we forgot to write our *Hello, World* inside quotes. Fix these errors and all the warnings will disappear.
+Seems like we have two problems: we are missing a blank line at the end of our file (style) and we forgot to add quotes to our *Hello, World*. Fix these errors and all the warnings will disappear.
 
 ### Black
 
-*Black* is a code formatter, a tool that will look at our code and automatically format it in compliance to the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide, the same *PEP* that use *Flake8* to lint our style errors.
+*Black* is a code formatter, a tool that will look at our code and automatically format it in compliance with the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide, the same *PEP* that uses *Flake8* to lint our style errors.
 
-Hold `shift + cmd + p` on Mac, or `shift + ctrl + p` on Windows or Linux to open the Command Palette and type *format document* and enter. A new popup message will appear:
+Hold `shift + cmd/ctrl + p` to open the Command Palette, type *format document*, and press enter. A new popup message will appear:
 
 ![black formatter popup](img/format-popup.png)
 
-Select *Use Black*. Now copy this poorly formated code into your python file:
+Select *Use Black*. Now copy this poorly formatted code into your python file:
 
 ```python
 for i in range(5):         # this comment has too many spaces
       print(i)  # this line has 6 space indentation.
 ```
 
-What an ugly and full of errors piece of s***... code. Try formating it again and see how black fix all of them for you!
+What an ugly and full of errors piece of s***... code. Try formatting it again and see how Black fixes all of them for you!
 
-Another thing we can do is to configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd + ,` on Mac or `ctrl + ,` on Windows and Linux to open the Settings. Make sure you are in the *Workspace Settings*, search for *format on save* and activate the checkbox:
+Another thing we can do is to configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd/ctrl + ,` to open the Settings. Make sure you are in the *Workspace Settings*, search for *format on save* and activate the checkbox:
 
 ![format on save](img/format-on-save.png)
 
-Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allowed by *Flake8*, so to avoid conflicts, open `.vscode` folder and add the following at the end of the file:
+Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allowed by *Flake8*, so to avoid conflicts, open `.vscode` folder and add the following at the end of the *settings.json* file:
 
 ```json
 {
@@ -103,9 +101,9 @@ Lastly, *Black* defaults to 88 characters per line in contrast with the 80 allow
 
 If you are serious about programming, it is crucial for you to learn how to test your projects. It's an incredibly useful skill that will allow you to write and deliver programs with confidence by reducing the possibility of catastrophic bugs appearing after shipping.
 
-[Pytest](https://docs.pytest.org/en/latest/) is a very popular and user friendly framework for writing tests. We [already installed](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1#Dependency-Management) it so we will now integrate it with *VSCode*.
+[Pytest](https://docs.pytest.org/en/latest/) is a very popular and user-friendly framework for writing tests. We [already installed](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1#Dependency-Management) it so we will also integrate it with *VSCode*.
 
-Open the *tests* folder and select the `test_how_long.py` file. *Poetry* already give us our first test:
+Open the *tests* folder and select the `test_how_long.py` file. *Poetry* already gives us our first test:
 
 ```python
 # test_how_long.py
@@ -116,7 +114,7 @@ def test_version():
     assert __version__ == '0.1.0'
 ```
 
-This test import the `__version__` variable from the `__init__.py` file that is inside the *how_long* folder and assert that the current version is *0.1.0*. Open your integrated terminal by going to *Terminal > New Terminal* and type:
+This test import the `__version__` variable from the `__init__.py` file that is inside the *how_long* folder and asserts that the current version is *0.1.0*. Open your integrated terminal by going to *Terminal > New Terminal* and type:
 
 ```
 $ pytest
@@ -126,7 +124,11 @@ The Output will look like this:
 
 ![pytest](img/pytest-terminal.png)
 
-Ok, everything is fine. Open your Command Palette `cmd/ctrl + p`, write *unit* and select *Python: Configure Unit Tests*, select *pytest* and finally the directory in which the test are stored, *tests* in our case.
+Ok, everything is fine. Open your Command Palette with `cmd/ctrl + p`:
+
+- Write *unit* and select *Python: Configure Unit Tests*.
+- Select *pytest*.
+- Choose the directory in which the test are stored, *tests* in our case.
 
 Three things happened:
 
@@ -134,7 +136,7 @@ Three things happened:
 
     ![test status bar](img/test-statusbar.png)
 
-- A new icon at the left bar. If you click on it a panel displaying all the test will appear. This allows you to select a specific test to run.
+- A new icon at the left bar. If you click on it a panel displaying all the test and letting choose one individually will appear.
 
     ![test side panel](img/test-side-panel.png)
 
