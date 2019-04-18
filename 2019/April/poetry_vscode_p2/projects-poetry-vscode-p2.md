@@ -136,14 +136,14 @@ Three things happened:
 
     ![test status bar](img/test-statusbar.png)
 
-- A new icon at the left bar. If you click on it a panel displaying all the test and letting choose one individually will appear.
+- A new icon at the left bar. If you click on it a panel displaying all the test and letting you run them individually will appear.
 
     ![test side panel](img/test-side-panel.png)
 
-- Inside the the test file a new menu will be displayed before every test: a check icon will appear if is ok, and an *x* other wise. It also allow you to run specific tests.
+- Inside the test file, new options will be displayed before every function: a check icon will appear if is ok, and an *x* otherwise. It also allow you to run specific tests.
 
     ![test inline](img/test-inline.png)
 
 ## Conclusion
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum maxime hic quaerat rerum aspernatur similique voluptatum illum veritatis sint sequi fugiat odio, numquam saepe quisquam accusantium assumenda corporis soluta.
+This was originally a two part article, 
