@@ -35,7 +35,7 @@ names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 Notice how we inverted the order:
 
 - First, we determine what the output of the loop will be `[print(n) ...]`.
-- And then we define the variable that will represent each of the items and state the list (or [set](https://www.pythoncheatsheet.org/#Set-comprehension)/[dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)) we will work on `[... for n in names]`.
+- And then we define the variable that will represent each of the items and state the [List](https://www.pythoncheatsheet.org/#Lists) (or [Set](https://www.pythoncheatsheet.org/#Set-comprehension)/[Dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)) we will work on `[... for n in names]`.
 
 Not that difficult right?
 
