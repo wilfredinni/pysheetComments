@@ -1,4 +1,4 @@
-In the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1), we learned what the `pyproject.toml` file is and how to work with it, used [Poetry](https://poetry.eustace.io/) to start a new project, create a Virtual Environment and add and remove dependencies. We did all of this with the following commands:
+In the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1), we learned what the `pyproject.toml` file is and how to work with it, used [Poetry](https://poetry.eustace.io/) to start a new project, create a Virtual Environment and finally, we added and removed dependencies. To do all of this we used following commands:
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
