@@ -8,10 +8,16 @@ In this first part we will:
 - Create a Virtual Environment.
 - Manage dependencies.
 
-And in the second part:
+In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2):
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
-- Integrate *Pytest*, *Black* and *Flake8* with the editor (dev dependencies installed in the fist part).
+- Integrate our dev dependencies with the editor.
+  - *Flake8*
+  - *Black*
+  - *Pytest*
+
+And finally, in a third part we'll:
+
 - Write a sample library.
 - Build our project with *Poetry*.
 - Publish it on *PyPI*.
@@ -174,6 +180,6 @@ In this first part, we have started a new project, created a Virtual Environment
 | `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
 | `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
 
-In the second part, we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, we will write and publish a sample library to *PyPI*.
+In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2), we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, in a third one, we will write and publish a sample library to *PyPI*.
 
 Any doubt or suggestion? Please leave a comment.
