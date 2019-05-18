@@ -1,5 +1,5 @@
 > Updates:
-> - 18-05-2019: Installing Poetry.
+> - 18-05-2019: [Installing Poetry](#installing-poetry).
 
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
 
@@ -39,7 +39,7 @@ But Poetry provides a custom installer that will isolate it from the rest of you
 $ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 ```
 
-If Poetry is installed this way, you will later by able easily update by using `poetry self:update`.
+If installed this way, you will later by able to update poetry to the latest stable version with `poetry self:update` command.
 
 ## Starting a New Project
 
@@ -192,6 +192,7 @@ In this first part, we have started a new project, created a Virtual Environment
 | `poetry add -D [package-name]`    | Add a dev package to a Virtual Environment.            |
 | `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
 | `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
+| `poetry self:update`              | Update poetry to the latest stable version.            |
 
 In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2), we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, in a third one, we will write and publish a sample library to *PyPI*.
 
