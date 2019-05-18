@@ -1,5 +1,5 @@
 > Updates:
-> - 18-05-2019: [Installing Poetry](#installing-poetry).
+> - 18-05-2019: [Installing Poetry](#Installing-Poetry).
 
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
 
@@ -39,7 +39,7 @@ But Poetry provides a custom installer that will isolate it from the rest of you
 $ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 ```
 
-If installed this way, you will later by able to update poetry to the latest stable version with `poetry self:update` command.
+If installed this way, you will later by able to update poetry to the latest stable version with the `poetry self:update` command.
 
 ## Starting a New Project
 
