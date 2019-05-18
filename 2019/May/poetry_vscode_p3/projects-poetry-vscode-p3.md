@@ -73,7 +73,7 @@ _______
         return [x for x in range(10_000_000)]
 ```
 
-Now, navigate to `how_long/how_long.py`:
+Navigate to `how_long/how_long.py`:
 
 ```python
 # how_long.py
@@ -105,7 +105,7 @@ from .how_long import timer
 __version__ = "0.1.1"
 ```
 
-And finally, the `tests/test_how_long.py`:
+And finally, the `tests/test_how_long.py` file:
 
 ```python
 from how_long import __version__
@@ -142,11 +142,11 @@ Run the tests and if everything is fine, move on.
 
 ## Building and Publishing
 
-Finally, the time to make this project available to the world has come! First, make sure you have an account on [Pypi](https://pypi.or), and if not, you will need to [register](https://pypi.org/account/register/) one. Remember that the name must be unique, if unsure go and use the [search](https://pypi.org/search/?q=) to check it out.
+Finally, the time to make this project available to the world has come! First, make sure you have an account on [Pypi](https://pypi.or), and if not, [register](https://pypi.org/account/register/) one. Remember that the package name must be unique, if unsure go and use the [search](https://pypi.org/search/?q=) to check it out.
 
 ### Build
 
-The `poetry build` command builds the source and wheels archives that will letter be uploaded as the source of your project:
+The `poetry build` command builds the source and wheels archives that will letter be uploaded as the source of the project:
 
 ![poetry build](img/poetry_build.png)
 
@@ -158,7 +158,7 @@ This command publishes the package to *Pypi* and automatically register it befor
 
 ![poetry publish](img/poetry_publish.png)
 
-Enter your credentials and if everything is ok, [browse your project](https://pypi.org/project/how-long/) and you'll see something like this:
+Enter your credentials and if everything is ok, [browse](https://pypi.org/project/how-long/) your project and you'll see something like this:
 
 ![pipy how-long](img/pypi.png)
 
