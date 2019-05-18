@@ -12,7 +12,7 @@ And finally, we will write, build and publish our project to [Pypi](https://pypi
 
 ## The Project
 
-As mentioned earlier, we will write a very simple decorator that the only thing it does is print to the console how long it takes for a function to run. It will work like this:
+As mentioned earlier, this will be a very simple decorator that the only thing it does is print to the console how long it takes for a function to run. It will work like this:
 
 ```python
 from how_long import timer
@@ -25,7 +25,7 @@ test_function()
 # Execution Time: 955 ms.
 ```
 
-And at the end, your project directory will look, more or less, like this:
+In the end, the project directory will look, more or less, like this:
 
 ```
 how-long
@@ -48,11 +48,11 @@ how-long
 
 ```
 
-Before we start, lets check for package updates with the `poetry update` command:
+Before we start, check for package updates with the `poetry update` command:
 
 ![poetry update](img/poetry_update.png)
 
-First, add short description of the project in the `README.rst`:
+Ok, now add a short description of the project in the `README.rst`:
 
 ```rst
 how_long
@@ -73,7 +73,7 @@ _______
         return [x for x in range(10_000_000)]
 ```
 
-Now, navigate to `how_long/how_long.py` and add the following:
+Now, navigate to `how_long/how_long.py`:
 
 ```python
 # how_long.py
@@ -97,7 +97,7 @@ def timer(function):
     return function_wrapper
 ```
 
-In the `how_long/__init__.py` file:
+In `how_long/__init__.py`:
 
 ```python
 from .how_long import timer
@@ -105,7 +105,7 @@ from .how_long import timer
 __version__ = "0.1.1"
 ```
 
-And finally, in `tests/test_how_long.py`:
+And finally, the `tests/test_how_long.py`:
 
 ```python
 from how_long import __version__
@@ -124,8 +124,7 @@ def test_wrap():
     assert wrapped_function.__name__ == "wrapped_function"
 ```
 
-You can now type `poetry install` on your terminal to install and prove your package locally. Activate your virtual environment if you haven't and enter the
-Python interactive shell:
+You can now enter `poetry install` on your terminal to install and prove your package locally. Activate your virtual environment if you haven't and in the Python interactive shell:
 
 ```python
 >>> from how_long import timer
@@ -139,11 +138,11 @@ Execution Time: 705 ms.
 
 ```
 
-Now run the tests and if everything is fine, lets move on.
+Run the tests and if everything is fine, move on.
 
 ## Building and Publishing
 
-Finally, the time to make our package available to the world has come! First make sure you have an account on [Pypi](https://pypi.or). If don't have one, you will need to [register](https://pypi.org/account/register/) one. Remember that you need to choose an unused name for your project, if unsure go and use the [search](https://pypi.org/search/?q=) to check it out.
+Finally, the time to make this project available to the world has come! First, make sure you have an account on [Pypi](https://pypi.or), and if not, you will need to [register](https://pypi.org/account/register/) one. Remember that the name must be unique, if unsure go and use the [search](https://pypi.org/search/?q=) to check it out.
 
 ### Build
 
