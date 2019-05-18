@@ -1,3 +1,6 @@
+> Updates:
+> - 18-05-2019: Installing Poetry.
+
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
 
 In this series of articles, we'll use [Poetry](https://poetry.eustace.io/) to manage our dependencies, build a simple project and, with a single command, publish it on [PyPI](https://pypi.org/).
@@ -22,13 +25,23 @@ And finally, in a third part we'll:
 - Build our project with *Poetry*.
 - Publish it on *PyPI*.
 
-## Starting a New Project
+## Installing Poetry
 
-First, we need to install poetry:
+The easiest way is to use *pip*:
 
 ```
 $ pip install poetry
 ```
+
+But Poetry provides a custom installer that will isolate it from the rest of your system by vendorizing its dependencies. This is the recommended way of installing poetry:
+
+```
+$ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+```
+
+If Poetry is installed this way, you will later by able easily update by using `poetry self:update`.
+
+## Starting a New Project
 
 We can now start a new Python project by using the `poetry new <project_name>` command. I will call it ***how-long*** and is going to be a very simple library to measure a function execution time:
 
