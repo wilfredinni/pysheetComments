@@ -1,4 +1,4 @@
-We're almost there! so far we have:
+So far we have:
 
 - [Started a new project](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1#Starting-a-New-Project).
 - [Created a Virtual Environment](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1#Creating-a-Virtual-Environment) with *Poetry*.
@@ -165,3 +165,18 @@ Enter your credentials and if everything is ok, [browse](https://pypi.org/projec
 Congratulations!! you can now `poetry add how-long` or `pip install how-long` or `pipenv install how-long`.
 
 ## Conclusion
+
+| Command                           | Description                                            |
+| --------------------------------- | ------------------------------------------------------ |
+| `poetry new [package-name]`       | Start a new Python Project.                            |
+| `poetry init`                     | Create a *pyproject.toml* file interactively.          |
+| `poetry install`                  | Install the packages inside the *pyproject.toml* file. |
+| `poetry add [package-name]`       | Add a package to a Virtual Environment.                |
+| `poetry add -D [package-name]`    | Add a dev package to a Virtual Environment.            |
+| `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
+| `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
+| `poetry update`                   | Get the latest versions of the dependencies            |
+| `poetry shell`                    | Spawns a shell within the virtual environment.         |
+| `poetry build`                    | builds the source and wheels archives.                 |
+| `poetry publish`                  | Publishes the package to Pypi.                         |
+| `poetry self:update`              | Update poetry to the latest stable version.            |
