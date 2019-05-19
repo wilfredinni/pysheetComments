@@ -1,4 +1,4 @@
-In the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1), we learned what the `pyproject.toml` file is and how to work with it, used [Poetry](https://poetry.eustace.io/) to start a new project, create a Virtual Environment and finally, we added and removed dependencies. To do all of this we used following commands:
+In the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1), we learned what the `pyproject.toml` file is and how to work with it, used [Poetry](https://poetry.eustace.io/) to start a new project, create a Virtual Environment and to add and remove dependencies. All of that with the following commands:
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
@@ -19,7 +19,13 @@ In this second part we'll:
   - *Black*
   - *Pytest*
 
-Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1) of this article.
+And in a third part we will:
+
+- Write a sample library.
+- Build our project with *Poetry*.
+- Publish it on *PyPI*.
+
+Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1) of this series.
 
 ## Setting Up Poetry on VSCode
 
@@ -29,7 +35,7 @@ A few days have passed since the first part, so it may be a good idea to check f
 
 Ok, to this day there are no new versions available.
 
-When you create a Virtual Environment with the *venv* command, *VSCode* will automatically add it as the default Python Environment for that project. When working With *Poetry*, the first time we will need to type the following:
+When you create a Virtual Environment with the *venv* command, *VSCode* will automatically set it as the default Python Environment for that project. When working With *Poetry*, the first time we will need to type the following:
 
 ```
 $ poetry shell
@@ -54,7 +60,7 @@ Now, let's integrate our dev dependencies, *Flake8*, *Black*, and *Pytest* to Vi
 
 [*Flake8*](http://flake8.pycqa.org/en/latest/) will provide our projects with *linting* capabilities. In other words, syntax and style errors, and thanks to VSCode, we will know them as we type.
 
-By default, the Python extension comes with *Pylint* enabled, which is powerful but complex to configure. To change to *Flake8* make a change to any Python file and save it, in the bottom right corner a popup message will show:
+By default, the Python extension comes with *Pylint* enabled, which is powerful but complex to configure. To switch to *Flake8* make a change to any Python file and save it, in the bottom right corner a popup message will show:
 
 ![flake8](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/select-linter.png)
 
@@ -81,7 +87,9 @@ for i in range(5):         # this comment has too many spaces
 
 What an ugly and full of errors piece of s***... code. Try formatting it again and see how *Black* fixes all of them for you!
 
-Another thing we can do is to configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd/ctrl + ,` to open the Settings. Make sure you are in the *Workspace Settings*, search for *format on save* and activate the checkbox:
+Another thing we can do is configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd/ctrl + ,` to open the Settings. Make sure you are in the *Workspace Settings*, search for *format on save* and activate the checkbox:
+
+Another thing we can do is configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd/ctrl + ,` to open the Settings. Make sure you are in the *Workspace Settings*, search for *format on save* and activate the checkbox:
 
 ![format on save](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-on-save.png)
 
@@ -125,7 +133,7 @@ The Output will look like this:
 
 ![pytest](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/pytest-terminal.png)
 
-Ok, everything is fine. Open your Command Palette with `cmd/ctrl + p`:
+Ok, everything is fine. Open your Command Palette with `shift + cmd/ctrl + p`:
 
 - Write *unit* and select *Python: Configure Unit Tests*.
 - Select *pytest*.
@@ -134,15 +142,15 @@ Ok, everything is fine. Open your Command Palette with `cmd/ctrl + p`:
 Three things happened:
 
 - A new button appeared at the status bar: *Run Tests*. This is the same as typing *pytest* in the terminal. Press it and select *Run All Unit Tests*. When finished, it will inform you the number of tests that passed and the tests that not:
-
+  
     ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-statusbar.png)
 
 - A new icon at the left bar. If you click on it a panel displaying all the test will appear. Here, you can run each one individually:
-
+  
     ![test side panel](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-side-panel.png)
 
-- Inside the test file, new options will be displayed before every function: a check icon will appear if is ok, and an *x* otherwise. It also allow you to run specific tests:
-
+- Inside the test file, new options will be displayed before every test function: a check icon will appear if is ok, and an *x* otherwise. It also allow you to run specific tests:
+  
     ![test inline](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-inline.png)
 
 ## Conclusion
@@ -154,7 +162,7 @@ So far we have:
 - [Added, Deleted and Updated](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1#Dependency-Management) dependencies.
 - Added our [Virtual Environment to VSCode](#Setting-Up-Poetry-on-VSCode).
 - [Configured *Flake8*](#Flake8) to *lint* our code as we type.
-- Choose [*Black* as the formatter](#Black) of our project.
+- Choose [*Black*](#Black) as the formatter of our project.
 - And [included *Pytest*](#Pytest) to run our tests in a visual way.
 
 In the third and last part we will:

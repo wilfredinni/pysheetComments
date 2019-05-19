@@ -1,7 +1,14 @@
 > Updates:
+> 
 > - 18-05-2019: [Installing Poetry](#Installing-Poetry).
 
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
+
+Poetry on the other hand:
+
+> `poetry` is a tool to handle dependency installation as well as building and packaging of Python packages. It only needs one file to do all of that: the new, [standardized](https://www.python.org/dev/peps/pep-0518/) `pyproject.toml`.
+> 
+> In other words, poetry uses `pyproject.toml` to replace `setup.py`, `requirements.txt`, `setup.cfg`, `MANIFEST.in` and the newly added `Pipfile`.
 
 In this series of articles, we'll use [Poetry](https://poetry.eustace.io/) to manage our dependencies, build a simple project and, with a single command, publish it on [PyPI](https://pypi.org/).
 
@@ -33,7 +40,7 @@ The easiest way is to use *pip*:
 $ pip install poetry
 ```
 
-But Poetry provides a custom installer that will isolate it from the rest of your system by vendorizing its dependencies. This is the recommended way of installing poetry:
+But we will use Poetry own installer to isolate it from the rest of the system by vendorizing its dependencies. This is the recommended way of installing poetry:
 
 ```
 $ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
@@ -119,11 +126,11 @@ $ poetry install
 
 After is done, a new file, `poetry.lock` will be created.
 
-> When Poetry has finished installing, it writes all of the packages and the exact versions of them that it downloaded to the poetry.lock file, locking the project to those specific versions. You should commit the poetry.lock file to your project repo so that all people working on the project are locked to the same versions of dependencies (more below).
+> When Poetry has finished installing, it writes all of the packages and the exact versions of them that it downloaded to the poetry.lock file, locking the project to those specific versions. You should commit the poetry.lock file to your project repo so that all people working on the project are locked to the same versions of dependencies.
 
 ## Dependency Management
 
-One way to add or remove dependencies is to directly edit *pyproject.toml* and run `poetry install` to apply the changes. We instead will use the `add` and `remove` commands to avoid manual modifications.
+One way to add or remove dependencies is to directly edit *pyproject.toml* and then run `poetry install` to apply the changes. We will instead use the `add` and `remove` commands to avoid manual modifications.
 
 ### Adding Dependencies
 
@@ -181,7 +188,7 @@ $ poetry remove -D mypy
 
 ## Conclusion
 
-In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies using the following commands:
+In this first part, we have started a new project, created a Virtual Environment and added and removed dependencies by using the following commands:
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
