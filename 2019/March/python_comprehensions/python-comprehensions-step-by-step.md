@@ -66,7 +66,7 @@ print(new_list)
 # ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-The reason we can do this is that a *List Comprehension* standard behavior is to return a list:
+The reason we can do this is because a *List Comprehension* standard behavior is to return a list:
 
 ```python
 >>> names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -100,7 +100,7 @@ print(new_list)
 # ['Charles', 'Carol']
 ```
 
-Isn't more readable this way?
+A lot more readable, right?
 
 ## Formating long List Comprehensions
 
@@ -114,9 +114,7 @@ print(new_list)
 # ['Charles', 'Patrick', 'George', 'Carol']
 ```
 
-Well, that is messy.
-
-Fortunately, it is possible to break *Comprehensions* in different lines:
+Well, that is messy. Fortunately, it is possible to break *Comprehensions* in different lines:
 
 ```python
 new_list = [n for n in names
@@ -127,14 +125,14 @@ new_list = [n for n in names
 
 ## Set and Dict Comprehensions
 
-If you have learned the basics of *List Comprehensions*... Congratulations! you just have done the same with [Sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [Dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)!
+If you learned the basics of *List Comprehensions*... Congratulations! you just did it with [Sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [Dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)!
 
 Set comprehension:
 
 ```python
 my_set = {"abc", "def"}
 
-# Here, we create a new set with uppercase elements using a for loop
+# Here, we create a new set with uppercase elements with a for loop
 new_set = set()
 for s in my_set:
     new_set.add(s.upper())
@@ -153,7 +151,7 @@ Dict comprehension:
 ```python
 my_dict = {'name': 'Christine', 'age': 98}
 
-# A new dictionary out of a existing one using a for loop
+# A new dictionary out of an existing one with a for loop
 new_dict = {}
 for key, value in my_dict.items():
     new_dict[key] = value
