@@ -64,7 +64,7 @@ By default, the Python extension comes with *Pylint* enabled, which is powerful 
 
 ![flake8](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/select-linter.png)
 
-Click on **select linter** and choose **flake8** from the list. Now, *VSCode* will tell us our *syntax* and *style* problems, in green or red depending on its severity, always with a nice description of what is wrong:
+Click on **Select Linter** and choose **Flake8** from the list. Now, *VSCode* will tell us our *syntax* and *style* problems, in green or red depending on its severity, always with a nice description of what is wrong:
 
 ![linting](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/linting.png)
 
@@ -74,7 +74,7 @@ Seems like we have two problems: we are missing a blank line at the end of our f
 
 [Black](https://github.com/ambv/black) is a code formatter, a tool that will look at our code and automatically format it in compliance with the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide, the same *PEP* that uses *Flake8* to lint our style errors.
 
-Hold `shift + cmd/ctrl + p` to open the Command Palette, type **format document**, and press enter. A new popup message will appear:
+Hold `shift + cmd/ctrl + p` to open the Command Palette, type **Format Document**, and press enter. A new popup message will appear:
 
 ![black formatter popup](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-popup.png)
 
@@ -87,7 +87,7 @@ for i in range(5):         # this comment has too many spaces
 
 What an ugly piece of s***... code. Try formatting it again and see how *Black* fixes all of them for you!
 
-Another thing we can do is configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd/ctrl + ,` to open the Settings. Make sure you are in the **Workspace Settings**, search for **format on save** and activate the checkbox:
+Another thing we can do is configure VSCode so that every time we save, *Black* will automatically format our code. Hold `cmd/ctrl + ,` to open the Settings. Make sure you are in the **Workspace Settings**, search for **Format On Save** and activate the checkbox:
 
 ![format on save](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-on-save.png)
 
