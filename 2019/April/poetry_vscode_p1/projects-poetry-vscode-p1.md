@@ -50,7 +50,7 @@ If installed this way, you will later by able to update poetry to the latest sta
 
 ## Starting a New Project
 
-We can now start a new Python project by using the `poetry new <project_name>` command. I will call it ***how-long*** and is going to be a very simple library to measure a function execution time:
+We can now start a new Python project by using the `poetry new [project_name]` command. I will call it ***how-long*** and is going to be a very simple library to measure a function execution time:
 
 ```
 $ poetry new how-long

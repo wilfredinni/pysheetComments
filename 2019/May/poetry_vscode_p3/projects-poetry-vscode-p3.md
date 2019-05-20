@@ -20,7 +20,7 @@ And finally, in this third and last part we'll:
 
 ## Poetry Commands
 
-Here is a table with the commands used in this series and their respective descriptions. For the full list of commands read the [Poetry Documentation](https://poetry.eustace.io/docs/cli/#publish).
+Here is a table with the commands used in this series and their descriptions. For the full list of commands read the [Poetry Documentation](https://poetry.eustace.io/docs/cli/).
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
@@ -34,7 +34,7 @@ Here is a table with the commands used in this series and their respective descr
 | `poetry update`                   | Get the latest versions of the dependencies            |
 | `poetry shell`                    | Spawns a shell within the virtual environment.         |
 | `poetry build`                    | builds the source and wheels archives.                 |
-| `poetry publish`                  | Publishes the package to Pypi.                         |
+| `poetry publish`                  | Publish the package to Pypi.                           |
 | `poetry publish --build`          | Build and publish a package.                           |
 | `poetry self:update`              | Update poetry to the latest stable version.            |
 
@@ -168,7 +168,7 @@ Execution Time: 705 ms.
 
 ## Building and Publishing
 
-Finally, the time to make this project available to the world has come! First, make sure you have an account on [Pypi](https://pypi.or), and if not, you will need to [register](https://pypi.org/account/register/) one. Remember that the package name must be unique, if unsure go and use the [search](https://pypi.org/search/?q=) to check it out.
+Finally, the time to make this project available to the world has come! First, make sure you have an account on [Pypi](https://pypi.or), and if not, [register](https://pypi.org/account/register/) one. Remember that the package name must be unique, if unsure go and use the [search](https://pypi.org/search/?q=) to check it out.
 
 ### Build
 
@@ -192,29 +192,9 @@ Enter your credentials and if everything is ok, [browse](https://pypi.org/projec
 
 We can now let others know that they can `pip install how-long` from any machine, anywhere!
 
-## Poetry Commands
-
-Here is a table with the commands used in this series and their respective descriptions. For the full list of commands read the [Poetry Documentation](https://poetry.eustace.io/docs/cli/#publish).
-
-| Command                           | Description                                            |
-| --------------------------------- | ------------------------------------------------------ |
-| `poetry new [package-name]`       | Start a new Python Project.                            |
-| `poetry init`                     | Create a *pyproject.toml* file interactively.          |
-| `poetry install`                  | Install the packages inside the *pyproject.toml* file. |
-| `poetry add [package-name]`       | Add a package to a Virtual Environment.                |
-| `poetry add -D [package-name]`    | Add a dev package to a Virtual Environment.            |
-| `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
-| `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
-| `poetry update`                   | Get the latest versions of the dependencies            |
-| `poetry shell`                    | Spawns a shell within the virtual environment.         |
-| `poetry build`                    | builds the source and wheels archives.                 |
-| `poetry publish`                  | Publishes the package to Pypi.                         |
-| `poetry publish --build`          | Build and publish a package.                           |
-| `poetry self:update`              | Update poetry to the latest stable version.            |
-
 ## Conclusion
 
-I remember the first time I tried to publish a Python package, and it was a nightmare. I was just starting in Python and I have to spend a "few days" trying to understand what the `setup.py` file was and how to use it. In the end, I ended up with several different files: a `Makefile`, a `MANIFEST.in`, a `requirements.txt` and a `test_requirements.txt`. That's why the words of [Sébastien Eustace](https://github.com/sdispater), the creator of [Poetry](https://github.com/sdispater/poetry), made a lot of sense to me:
+I remember the first time I tried to publish a package, and it was a nightmare. I was just starting in Python and I have to spend a "few hours" trying to understand what the `setup.py` file was and how to use it. In the end, I ended up with several different files: a `Makefile`, a `MANIFEST.in`, a `requirements.txt` and a `test_requirements.txt`. That's why the words of [Sébastien Eustace](https://github.com/sdispater), the creator of [Poetry](https://github.com/sdispater/poetry), made a lot of sense to me:
 
 > Packaging and dependency management in Python are rather convoluted and hard to understand for newcomers. Even for seasoned developers it might be cumbersome at times to create all files needed in a Python project: `setup.py`, `requirements.txt`, `setup.cfg`, `MANIFEST.in` and the newly added `Pipfile`.
 > 
@@ -224,4 +204,4 @@ I remember the first time I tried to publish a Python package, and it was a nigh
 > 
 > And, finally, there is no reliable tool to properly resolve dependencies in Python, so I started `poetry` to bring an exhaustive dependency resolver to the Python community.
 
-Poetry is by [no means perfect](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry), but is quick, easy to use, reliable and does the job done in a great way.
+Poetry is by [no means perfect](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry) but, unlike other tools, it really does what promises.
