@@ -7,7 +7,7 @@ In the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-p
 In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2):
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
-- Integrate our dev dependencies with the editor.
+- Integrate our dev dependencies with the editor:
   - *Flake8*
   - *Black*
   - *Pytest*
@@ -20,7 +20,7 @@ And finally, in this third and last part we'll:
 
 ## Poetry Commands
 
-Here is a table with the commands used in this series and their descriptions. For the full list of commands read the [Poetry Documentation](https://poetry.eustace.io/docs/cli/).
+Here is a table with the commands used in this series as well as their descriptions. For a full list read the [Poetry Documentation](https://poetry.eustace.io/docs/cli/).
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
@@ -40,7 +40,7 @@ Here is a table with the commands used in this series and their descriptions. Fo
 
 ## The Project
 
-You cand download the source code from [GitHub](https://github.com/wilfredinni/how-long) if you want, but as mentioned earlier, this will be a very simple decorator that the only thing it will do is print to the console how long it takes for a function to run:
+You can download the source code from [GitHub](https://github.com/wilfredinni/how-long) if you want, but as mentioned earlier, this will be a very simple decorator that the only thing it will do is print to the console how long it takes for a function to run:
 
 ```python
 from how_long import timer
@@ -81,7 +81,7 @@ Before we start, check for package updates with the `poetry update` command:
 
 Ok, now add a short description of the project in the `README.rst`:
 
-```rst
+```
 how_long
 ========
 
@@ -172,7 +172,7 @@ Finally, the time to make this project available to the world has come! First, m
 
 ### Build
 
-The `poetry build` command builds the source and wheels archives that will letter be uploaded as the source of the project:
+The `poetry build` command builds the source and [wheels](https://pythonwheels.com/) archives that will letter be uploaded as the source of the project:
 
 ![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
 
