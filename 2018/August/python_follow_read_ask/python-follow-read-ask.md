@@ -26,7 +26,7 @@ In this post, I want to share some of the "assets" that I have collected to this
   
   > I spent some of my spare time in the last month or so writing a tiny blog engine, and I really like how it came out.
 
-- [ Jahongir Rahmonov](http://rahmonov.me/)
+- [ Jahongir Rahmonov](http://rahmonov.me/)
   
   > I write about Python, Django, AngularJS and sometimes something non-technical.
 
