@@ -68,7 +68,7 @@ Click on **Select Linter** and choose **Flake8** from the list. Now, *VSCode* wi
 
 ![linting](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/linting.png)
 
-Seems like we have two problems: we are missing a blank line at the end of our file (style) and we forgot to add quotes to our *Hello, World!* string (syntax). Fix then and see all warnings disappear.
+Seems like we have two problems: we are missing a blank line at the end of our file (style) and forgot to add quotes to our *Hello, World!* string (syntax). Fix them and see all warnings disappear.
 
 ## Black
 
