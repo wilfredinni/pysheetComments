@@ -163,7 +163,7 @@ So far we have:
 - Choose [*Black*](#Black) as the formatter of our project.
 - And [included *Pytest*](#Pytest) to run our tests in a visual way.
 
-In the third and last part we will:
+In the [third](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3) and last part we will:
 
 - Write a sample library.
 - Build our project with *Poetry*.

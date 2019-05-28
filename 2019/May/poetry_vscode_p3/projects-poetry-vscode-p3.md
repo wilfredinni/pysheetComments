@@ -6,8 +6,8 @@ In the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-p
 
 In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2):
 
-- Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
-- Integrate our dev dependencies with the editor:
+- Added our virtual Environment to [VSCode](https://code.visualstudio.com/).
+- Integrated our dev dependencies with the editor:
   - *Flake8*
   - *Black*
   - *Pytest*
