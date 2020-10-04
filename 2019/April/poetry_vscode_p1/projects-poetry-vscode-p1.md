@@ -1,5 +1,5 @@
 > Updates:
-> 
+>
 > - 18-05-2019: [Installing Poetry](#Installing-Poetry).
 
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 2.2 for one and 1.9 in other.
@@ -7,7 +7,7 @@ A Virtual Environment is an isolated Python installation designed to avoid filli
 Poetry on the other hand:
 
 > `poetry` is a tool to handle dependency installation as well as building and packaging of Python packages. It only needs one file to do all of that: the new, [standardized](https://www.python.org/dev/peps/pep-0518/) `pyproject.toml`.
-> 
+>
 > In other words, poetry uses `pyproject.toml` to replace `setup.py`, `requirements.txt`, `setup.cfg`, `MANIFEST.in` and the newly added `Pipfile`.
 
 In this series of articles, we'll use [Poetry](https://poetry.eustace.io/) to manage our dependencies, build a simple project and, with a single command, publish it on [PyPI](https://pypi.org/).
@@ -22,19 +22,19 @@ In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
 - Integrate our dev dependencies with the editor.
-  - *Flake8*
-  - *Black*
-  - *Pytest*
+  - _Flake8_
+  - _Black_
+  - _Pytest_
 
 And finally, in a [third](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3) part we'll:
 
 - Write a sample library.
-- Build our project with *Poetry*.
-- Publish it on *PyPI*.
+- Build our project with _Poetry_.
+- Publish it on _PyPI_.
 
 ## Installing Poetry
 
-The easiest way is to use *pip*:
+The easiest way is to use _pip_:
 
 ```
 $ pip install poetry
@@ -43,22 +43,22 @@ $ pip install poetry
 But we will use Poetry own installer to isolate it from the rest of the system by vendorizing its dependencies. This is the recommended way of installing poetry:
 
 ```
-$ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+$ curl -SSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 ```
 
-If installed this way, you will later by able to update poetry to the latest stable version with the `poetry self:update` command.
+If installed this way, you will later be able to update poetry to the latest stable version with the `poetry self:update` command.
 
 ## Starting a New Project
 
-We can now start a new Python project by using the `poetry new [project_name]` command. I will call it ***how-long*** and is going to be a very simple library to measure a function execution time:
+We can now start a new Python project by using the `poetry new [project_name]` command. I will call it **_how-long_** and is going to be a very simple library to measure a function execution time:
 
 ```
 $ poetry new how-long
 ```
 
-> Note: For existing projects, you can use the `poetry init` command and interactively create a *pyproject.toml*.
+> Note: For existing projects, you can use the `poetry init` command and interactively create a _pyproject.toml_.
 
-The directory *how-long* is created and inside is a basic project structure:
+The directory _how-long_ is created and inside is a basic project structure:
 
 ```
 how-long
@@ -116,7 +116,7 @@ These packages are only for development and will not be included when we publish
 
 ## Creating a Virtual Environment
 
-Now, let's create a virtual Environment and install *Pytest* with the `poetry install` command:
+Now, let's create a Virtual Environment and install _Pytest_ with the `poetry install` command:
 
 ```
 $ poetry install
@@ -130,11 +130,11 @@ After is done, a new file, `poetry.lock` will be created.
 
 ## Dependency Management
 
-One way to add or remove dependencies is to directly edit *pyproject.toml* and then run `poetry install` to apply the changes. We will instead use the `add` and `remove` commands to avoid manual modifications.
+One way to add or remove dependencies is to directly edit _pyproject.toml_ and then run `poetry install` to apply the changes. We will instead use the `add` and `remove` commands to avoid manual modifications.
 
 ### Adding Dependencies
 
-Let's add two packages to the project, *pendulum* and *coo*:
+Let's add two packages to the project, _pendulum_ and _coo_:
 
 ```
 $ poetry add pendulum coo
@@ -142,13 +142,13 @@ $ poetry add pendulum coo
 
 ![poetry-add-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add.png)
 
-Open *pyproject.toml* and *poetry.lock* and see how they have updated.
+Open _pyproject.toml_ and _poetry.lock_ and see how they have updated.
 
 ### Adding Dev Dependencies
 
 These dependencies will be available only during development, Poetry will not include them when building and publishing the project.
 
-We already installed *Pytest*, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
+We already installed _Pytest_, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
 
 ```
 $ poetry add -D flake8 mypy
@@ -164,7 +164,7 @@ Could not find a matching version of package black
 add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
 ```
 
-This error happens because *black* is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so let's install it anyway using the `--allow-prereleases` flag:
+This error happens because _black_ is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so let's install it anyway using the `--allow-prereleases` flag:
 
 ```
 $ poetry add -D black --allow-prereleases
@@ -174,13 +174,13 @@ $ poetry add -D black --allow-prereleases
 
 ### Removing Dependencies
 
-You know what, I changed my mind, this project will use nor *coo* nor *mypy*. Start by removing *coo*, a normal dependency of our project:
+You know what, I changed my mind, this project will use nor _coo_ nor _mypy_. Start by removing _coo_, a normal dependency of our project:
 
 ```
 $ poetry remove coo
 ```
 
-Now *mypy* which is a dev dependency:
+Now _mypy_ which is a dev dependency:
 
 ```
 $ poetry remove -D mypy
@@ -193,14 +193,14 @@ In this first part, we have started a new project, created a Virtual Environment
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
 | `poetry new [package-name]`       | Start a new Python Project.                            |
-| `poetry init`                     | Create a *pyproject.toml* file interactively.          |
-| `poetry install`                  | Install the packages inside the *pyproject.toml* file. |
+| `poetry init`                     | Create a _pyproject.toml_ file interactively.          |
+| `poetry install`                  | Install the packages inside the _pyproject.toml_ file. |
 | `poetry add [package-name]`       | Add a package to a Virtual Environment.                |
 | `poetry add -D [package-name]`    | Add a dev package to a Virtual Environment.            |
 | `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
 | `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
 | `poetry self:update`              | Update poetry to the latest stable version.            |
 
-In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2), we will see more *Poetry* commands, add our Virtual Environment to *VSCode* and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, in a third one, we will write and publish a sample library to *PyPI*.
+In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2), we will see more _Poetry_ commands, add our Virtual Environment to _VSCode_ and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, in a third one, we will write and publish a sample library to _PyPI_.
 
 Any doubt or suggestion? Please leave a comment.

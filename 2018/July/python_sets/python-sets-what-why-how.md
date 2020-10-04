@@ -8,7 +8,7 @@ In this article, we are going to review and see examples of every one of the ele
 
 ### Initializing a Set
 
-There are two ways to create a set: one is to provide the built-in function `set()` with a list of elements, and the other is to use the curly braces `{}`. 
+There are two ways to create a set: one is to provide the built-in function `set()` with a list of elements, and the other is to use the curly braces `{}`.
 
 Initializing a set using the `set()` built-in function:
 
@@ -38,6 +38,7 @@ As you can see, both options are valid. The problem comes when what we want is a
 >>> type(s)
 <class 'dict'>
 ```
+
 That's right, we will get a dictionary instead of a set if we use empty curly braces =)
 
 It's a good moment to mention that for the sake of simplicity, all the examples provided in this article will use single digit integers, but sets can have all the [hashable](https://docs.python.org/3/glossary.html#term-hashable) data types that Python support. In other words, integers, strings and tuples, but not _mutable_ items like _lists_ or _dictionaries_:
@@ -53,7 +54,7 @@ Now that you know how to create a set and what type of elements it can contain, 
 
 ## Why You Should Use Them
 
-When writing code, you can do it in more than a single way. Some are considered to be pretty bad, and others, _clear, concise and maintainable_. Or "[_pythonic_](http://docs.python-guide.org/en/latest/writing/style/)". 
+When writing code, you can do it in more than a single way. Some are considered to be pretty bad, and others, _clear, concise and maintainable_. Or "[_pythonic_](http://docs.python-guide.org/en/latest/writing/style/)".
 
 From the [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/):
 
@@ -82,9 +83,9 @@ Traceback (most recent call last):
 TypeError: 'set' object is not subscriptable
 ```
 
-BUT, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use Sets. 
+BUT, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use Sets.
 
-I have to mention that when iterating over, sets are outperformed by lists, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read about it: 
+I have to mention that when iterating over, sets are outperformed by lists, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read about it:
 
 - [TimeComplexity](https://wiki.python.org/moin/TimeComplexity)
 - [How is set() implemented?](https://stackoverflow.com/questions/3949310/how-is-set-implemented)
@@ -156,13 +157,13 @@ Note: remember that sets are unordered, so there is no guarantee that when conve
 From the [Zen of Python](https://www.python.org/dev/peps/pep-0020/):
 
 > Beautiful is better than ugly. <br>
-Explicit is better than implicit.<br>
-Simple is better than complex.<br>
-Flat is better than nested.
+> Explicit is better than implicit.<br>
+> Simple is better than complex.<br>
+> Flat is better than nested.
 
-Aren't sets just Beautiful, Explicit, Simple and Flat?  =) 
+Aren't sets just Beautiful, Explicit, Simple and Flat? =)
 
-### Membership  Tests
+### Membership Tests
 
 Every time we use an _if_ statement to check if an element is, for example, in a list, you are doing a membership test:
 
@@ -202,6 +203,7 @@ And sets are more performant than lists when doing them:
 0.12354438152988223
 >>>
 ```
+
 Note: the above tests come from [this](https://stackoverflow.com/questions/2831212/python-sets-vs-lists) StackOverflow thread.
 
 So if you are doing comparisons like this in huge lists, it should speed you a good bit if you convert that list into a set.
@@ -212,7 +214,7 @@ Now that you know what a set is and why you should use them, let's do a quick to
 
 ### Adding Elements
 
-Depending on the number of elements to add, we will have to choose between the  `add()` and `update()` methods.
+Depending on the number of elements to add, we will have to choose between the `add()` and `update()` methods.
 
 `add()` will add a single element:
 
@@ -229,7 +231,7 @@ And `update()` multiple ones:
 >>> s = {1, 2, 3}
 >>> s.update([2, 3, 4, 5, 6])
 >>> s
-{1, 2, 3, 4, 5, 6} 
+{1, 2, 3, 4, 5, 6}
 ```
 
 Remember, sets remove duplicates.
@@ -292,7 +294,7 @@ set()
 
 ### intersection()
 
-`intersection`  or `&`  will return a set containing only the elements that are common in all of them:
+`intersection` or `&` will return a set containing only the elements that are common in all of them:
 
 ```python
 >>> s1 = {1, 2, 3}

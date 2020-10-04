@@ -8,15 +8,15 @@ In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-
 
 - Added our virtual Environment to [VSCode](https://code.visualstudio.com/).
 - Integrated our dev dependencies with the editor:
-  - *Flake8*
-  - *Black*
-  - *Pytest*
+  - _Flake8_
+  - _Black_
+  - _Pytest_
 
 And finally, in this third and last part we'll:
 
 - Write a sample library.
-- Build our project with *Poetry*.
-- Publish it on *PyPI*.
+- Build our project with _Poetry_.
+- Publish it on _PyPI_.
 
 ## Poetry Commands
 
@@ -25,8 +25,8 @@ Here is a table with the commands used in this series as well as their descripti
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
 | `poetry new [package-name]`       | Start a new Python Project.                            |
-| `poetry init`                     | Create a *pyproject.toml* file interactively.          |
-| `poetry install`                  | Install the packages inside the *pyproject.toml* file. |
+| `poetry init`                     | Create a _pyproject.toml_ file interactively.          |
+| `poetry install`                  | Install the packages inside the _pyproject.toml_ file. |
 | `poetry add [package-name]`       | Add a package to a Virtual Environment.                |
 | `poetry add -D [package-name]`    | Add a dev package to a Virtual Environment.            |
 | `poetry remove [package-name]`    | Remove a package from a Virtual Environment.           |
@@ -79,7 +79,7 @@ Before we start, check for package updates with the `poetry update` command:
 
 ![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_update.png)
 
-Ok, now add a short description of the project in the `README.rst`:
+Add a short description for the project in the `README.rst`:
 
 ```
 how_long
@@ -168,7 +168,7 @@ Execution Time: 705 ms.
 
 ## Building and Publishing
 
-Finally, the time to make this project available to the world has come! First, make sure you have an account on [Pypi](https://pypi.or), and if not, [register](https://pypi.org/account/register/) one. Remember that the package name must be unique, if unsure go and use the [search](https://pypi.org/search/?q=) to check it out.
+Finally, the time to make this project available to the world has come! Make sure you have an account on [Pypi](https://pypi.or), and if not, [register](https://pypi.org/account/register/) one. Remember that the package name must be unique, if unsure use the [search](https://pypi.org/search/?q=) to check it out.
 
 ### Build
 
@@ -176,11 +176,11 @@ The `poetry build` command builds the source and [wheels](https://pythonwheels.c
 
 ![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
 
-The *how_long.egg-info* directory will be created.
+The _how_long.egg-info_ directory will be created.
 
 ### Publish
 
-This command publishes the package to *Pypi* and automatically register it before uploading if this is the first time it is submitted:
+This command publishes the package to _Pypi_ and automatically register it before uploading if this is the first time it is submitted:
 
 ![poetry publish](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_publish.png)
 
@@ -197,11 +197,11 @@ We can now let others know that they can `pip install how-long` from any machine
 I remember the first time I tried to publish a package, and it was a nightmare. I was just starting in Python and I have to spend a "few hours" trying to understand what the `setup.py` file was and how to use it. In the end, I ended up with several different files: a `Makefile`, a `MANIFEST.in`, a `requirements.txt` and a `test_requirements.txt`. That's why the words of [Sébastien Eustace](https://github.com/sdispater), the creator of [Poetry](https://github.com/sdispater/poetry), made a lot of sense to me:
 
 > Packaging and dependency management in Python are rather convoluted and hard to understand for newcomers. Even for seasoned developers it might be cumbersome at times to create all files needed in a Python project: `setup.py`, `requirements.txt`, `setup.cfg`, `MANIFEST.in` and the newly added `Pipfile`.
-> 
+>
 > So I wanted a tool that would limit everything to a single configuration file to do: dependency management, packaging and publishing.
-> 
+>
 > It takes inspiration in tools that exist in other languages, like `composer` (PHP) or `cargo` (Rust).
-> 
+>
 > And, finally, there is no reliable tool to properly resolve dependencies in Python, so I started `poetry` to bring an exhaustive dependency resolver to the Python community.
 
 Poetry is by [no means perfect](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry) but, unlike other tools, it really does what promises.
