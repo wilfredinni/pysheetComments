@@ -62,25 +62,25 @@ Remember, the `-D` flag will install tell *Poetry* that these dependencies are o
 
 ## Integrating with VSCode
 
-Open VSCode with the `code .` command (inside the project directory) and create a `script.py` file inside the `my_project` folder. At the bottom left you should see something like `Python 3.8.6 64-bit`. Click it and make sure that the virtual environment loaded is the one you created earlier. 
+Open VSCode with the `code .` command (inside the project directory) and create a `script.py` file inside the `my_project` folder. At the bottom left you should see something like `Python 3.8.6 64-bit`. Click it and make sure that the virtual environment loaded is the one you created earlier.
 
 ![](img/environment.png)
 
 > If for some reason, and just like happened to me at the moment of writing this article, Visual Studio Code doesn't recognize your virtual environment, create a `.vscode` folder at the root level,  a `settings.json` file inside and add the path yourself:
-> 
+>
 > ```python
 > {
 >     "python.pythonPath": "/home/user/.cache/pypoetry/virtualenvs/my-project-tcdinX85-py3.8",
 > }
 > ```
-> 
+>
 > You can find the route at the moment of spawning the shell with the `poetry shell` command.
 
 Now:
 
 - Hold `shift + cmd/ctrl + p` and search for `Python: Select Linter` and select `flake8`
 
-- `shift + cmd/ctrl + p` again and select `Format Document`. In the bottom right corner a new pop up message will let you choose which one you want to use. 
+- `shift + cmd/ctrl + p` again and select `Format Document`. In the bottom right corner a new pop up message will let you choose which one you want to use.
 
 ![](img/format.png)
 
