@@ -67,13 +67,13 @@ Open VSCode with the `code .` command (inside the project directory) and create 
 ![](img/environment.png)
 
 > If for some reason, and just like happened to me at the moment of writing this article, Visual Studio Code doesn't recognize your virtual environment, create a `.vscode` folder at the root level,  a `settings.json` file inside and add the path yourself:
->
+> 
 > ```python
 > {
 >     "python.pythonPath": "/home/user/.cache/pypoetry/virtualenvs/my-project-tcdinX85-py3.8",
 > }
 > ```
->
+> 
 > You can find the route at the moment of spawning the shell with the `poetry shell` command.
 
 Now:
