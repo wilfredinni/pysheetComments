@@ -2,19 +2,7 @@
 
 Backups for the python Cheatsheet [blog](https://www.pythoncheatsheet.org/blog).
 
-## 2018
-
-#### July
-
-- [Hello, World! Python Cheatsheet](https://github.com/wilfredinni/pysheetComments/blob/master/2018/June/welcome/welcome.md)
-
-- [Python Sets: What, Why and How](https://github.com/wilfredinni/pysheetComments/blob/master/2018/July/python_sets/python-sets-what-why-how.md)
-
-#### August
-
-- [Python Newbies: Who to Follow, What to Read and Where to Ask](https://github.com/wilfredinni/pysheetComments/blob/master/2018/August/python_follow_read_ask/python-follow-read-ask.md)
-
-## 2019
+## ## 2019
 
 #### March
 
@@ -31,3 +19,15 @@ Backups for the python Cheatsheet [blog](https://www.pythoncheatsheet.org/blog).
 #### May
 
 - [Python projects with Poetry and VSCode. Part 3](https://github.com/wilfredinni/pysheetComments/blob/master/2019/May/poetry_vscode_p3/projects-poetry-vscode-p3.md)
+
+## 2018
+
+#### July
+
+- [Hello, World! Python Cheatsheet](https://github.com/wilfredinni/pysheetComments/blob/master/2018/June/welcome/welcome.md)
+
+- [Python Sets: What, Why and How](https://github.com/wilfredinni/pysheetComments/blob/master/2018/July/python_sets/python-sets-what-why-how.md)
+
+#### August
+
+- [Python Newbies: Who to Follow, What to Read and Where to Ask](https://github.com/wilfredinni/pysheetComments/blob/master/2018/August/python_follow_read_ask/python-follow-read-ask.md)
