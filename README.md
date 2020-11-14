@@ -2,7 +2,7 @@
 
 Backups for the python Cheatsheet [blog](https://www.pythoncheatsheet.org/blog).
 
-## ## 2019
+## 2019
 
 #### March
 
