@@ -56,7 +56,7 @@ Now that you know how to create a set and what type of elements it can contain, 
 
 When writing code, you can do it in more than a single way. Some are considered to be pretty bad, and others, _clear, concise and maintainable_. Or "[_pythonic_](http://docs.python-guide.org/en/latest/writing/style/)".
 
-From the [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/):
+From [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/):
 
 > When a veteran Python developer (a Pythonista) calls portions of code not “Pythonic”, they usually mean that these lines of code do not follow the common guidelines and fail to express its intent in what is considered the best (hear: most readable) way.
 
@@ -83,11 +83,11 @@ Traceback (most recent call last):
 TypeError: 'set' object is not subscriptable
 ```
 
-BUT, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use Sets.
+BUT, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use sets.
 
-I have to mention that when iterating over, sets are outperformed by lists, so prefer them if that is what you need. Why? well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read about it:
+I have to mention that when iterating over, sets are outperformed by lists, so prefer them if that is what you need. Why? Well, this article does not intend to explain the inner workings of sets, but if you are interested, here are a couple of links where you can read about it:
 
-- [TimeComplexity](https://wiki.python.org/moin/TimeComplexity)
+- [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 - [How is set() implemented?](https://stackoverflow.com/questions/3949310/how-is-set-implemented)
 - [Python Sets vs Lists](https://stackoverflow.com/questions/2831212/python-sets-vs-lists)
 - [Is there any advantage or disadvantage to using sets over list comps to ensure a list of unique entries?](https://mail.python.org/pipermail/python-list/2011-June/606738.html)
@@ -128,7 +128,7 @@ But it's ok, nothing of that matters anymore because we now have the sets in our
 >>>
 ```
 
-Now let's use the _timeit_ module and see the excecution time of lists and sets when removing duplicates:
+Now let's use the _timeit_ module and see the execution time of lists and sets when removing duplicates:
 
 ```python
 >>> from timeit import timeit
@@ -204,7 +204,7 @@ And sets are more performant than lists when doing them:
 >>>
 ```
 
-Note: the above tests come from [this](https://stackoverflow.com/questions/2831212/python-sets-vs-lists) StackOverflow thread.
+Note: the above tests come from [this](https://stackoverflow.com/questions/2831212/python-sets-vs-lists) Stack Overflow thread.
 
 So if you are doing comparisons like this in huge lists, it should speed you a good bit if you convert that list into a set.
 
@@ -216,7 +216,7 @@ Now that you know what a set is and why you should use them, let's do a quick to
 
 Depending on the number of elements to add, we will have to choose between the `add()` and `update()` methods.
 
-`add()` will add a single element:
+`add()` Will add a single element:
 
 ```python
 >>> s = {1, 2, 3}
@@ -330,4 +330,4 @@ Using `diference()` or `-`, creates a new set with the values that are in "s1" b
 
 I hope that after reading this article you know what a set is, how to manipulate their elements and the operations they can perform. Knowing when to use a set will definitely help you write cleaner code and speed up your programs.
 
-If you have any doubts, please leave a comment and I will gladly try to answer them. Also, don´t forget that if you already understand sets, they have their own [place](https://www.pythoncheatsheet.org/#sets) in the [Python Cheatsheet](https://www.pythoncheatsheet.org/), where you can have a quick reference and refresh what you already know.
+If you have any doubts, please leave a comment and I will gladly try to answer them. Also, don't forget that if you already understand sets, they have their own [place](https://www.pythoncheatsheet.org/#sets) in the [Python Cheatsheet](https://www.pythoncheatsheet.org/), where you can have a quick reference and refresh what you already know.
