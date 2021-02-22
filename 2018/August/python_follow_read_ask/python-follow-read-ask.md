@@ -1,10 +1,12 @@
+# Python Newbies: Who to Follow, What to Read and Where to Ask
+
 > Updates:
 >
 > - 05-21-2019: [Blogs](#Blogs), [Podcasts](#Podcasts).
 
-As a self-taught Python Developer and a newbie myself, I think that one of the most important things when starting is to surround ourselves with all things Python related. We can [read Blogs](#Blogs), follow [developers on Twitter](#Twitter) and try to contribute to their projects on GitHub. We can also subscribe to the different [mailing lists](#Weekly-Mailing-Lists) that exist, and of course, to the many [YouTube channels](#YouTube) that put online and free of charge millions of hours of content so we can just keep getting better and better at Python.
+As a self-taught Python Developer and a newbie myself, I think that one of the most important things when starting is to surround ourselves with all things Python related. We can [read blogs](#Blogs), follow [developers on Twitter](#Twitter) and try to contribute to their projects on GitHub. We can also subscribe to the different [mailing lists](#Weekly-Mailing-Lists) that exist, and of course, to the many [YouTube channels](#YouTube) that put online and free of charge millions of hours of content, so we can just keep getting better and better at Python.
 
-In this post, I want to share some of the "assets" that I have collected to this point.
+In this post, I want to share some "assets" that I have collected to this point.
 
 ## Awesome Python
 
@@ -334,7 +336,7 @@ This list is going to be short, just my favorites. If you want a realy complete 
 
 ## Conclusion
 
-Just two things: First, _we have no excuse_. And second, for all the people who try to put quality content online, for the ones that do it in their spare time and for free: subscribe to their channels, give them thumbs up even before you finish to watch their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Support Them.
+Just two things: First, _we have no excuse_. And second, for all the people who try to put quality content online, for the ones that do it in their spare time and for free: subscribe to their channels, give them thumbs up even before you finish watching their videos (so you don't forget later). If you read an article you liked, share it and disable your ad-blocker for their site. Support Them.
 
 As always, if you think something is missing, leave a comment and I will update the post later.
 
