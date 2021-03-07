@@ -21,7 +21,7 @@ for n in names:
 # Carol
 ```
 
-To do the same but with a _List Comprehension_ we start at the very end of the _For Loop_:
+To do the same but with a _List Comprehension_, we start at the very end of the _loop_:
 
 ```python
 names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -43,7 +43,7 @@ Not that difficult right?
 
 ## Creating a new List from a Comprehension
 
-> This is the primary use of a _List Comprehension_. Other usages may result in a hard to read code for you and others.
+> This is the primary use of a _List Comprehension_. Other usages may result in a hard-to-read code for you and others.
 
 This is how we create a new list from an existing collection with a _For Loop_:
 
@@ -68,7 +68,7 @@ print(new_list)
 # ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-The reason we can do this is because a _List Comprehension_ standard behavior is to return a list:
+The reason we can do this is that a _List Comprehension_ standard behavior is to return a list:
 
 ```python
 >>> names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
@@ -104,7 +104,7 @@ print(new_list)
 
 A lot more readable, right?
 
-## Formating long List Comprehensions
+## Formatting long List Comprehensions
 
 This time, we want `new_list` to have not only the names that start with a `C` but also those that end with an `e` and contain a `k`:
 
@@ -127,7 +127,7 @@ new_list = [n for n in names
 
 ## Set and Dict Comprehensions
 
-If you learned the basics of _List Comprehensions_... Congratulations! you just did it with [Sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [Dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)!
+If you learned the basics of _List Comprehensions_... Congratulations! You just did it with [Sets](https://www.pythoncheatsheet.org/#Set-comprehension) and [Dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data)!
 
 Set comprehension:
 
