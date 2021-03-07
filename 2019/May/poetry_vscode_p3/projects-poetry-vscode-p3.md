@@ -1,3 +1,5 @@
+# Python projects with Poetry and VSCode. Part 3
+
 In the [First Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1) we:
 
 - Started a new project.
@@ -186,7 +188,7 @@ This command publishes the package to _Pypi_ and automatically register it befor
 
 > You can also build and publish your project with `$ poetry publish --build`.
 
-Enter your credentials and if everything is ok, [browse](https://pypi.org/project/how-long/) your project and you'll see something like this:
+Enter your credentials and if everything is ok, [browse](https://pypi.org/project/how-long/) your project, and you'll see something like this:
 
 ![pipy how-long](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/pypi.png)
 
@@ -194,14 +196,14 @@ We can now let others know that they can `pip install how-long` from any machine
 
 ## Conclusion
 
-I remember the first time I tried to publish a package, and it was a nightmare. I was just starting in Python and I have to spend a "few hours" trying to understand what the `setup.py` file was and how to use it. In the end, I ended up with several different files: a `Makefile`, a `MANIFEST.in`, a `requirements.txt` and a `test_requirements.txt`. That's why the words of [Sébastien Eustace](https://github.com/sdispater), the creator of [Poetry](https://github.com/sdispater/poetry), made a lot of sense to me:
+I remember the first time I tried to publish a package, and it was a nightmare. I was just starting in Python and I have to spend a "few hours" trying to understand what the `setup.py` file was and how to use it. In the end, I ended up with several files: a `Makefile`, a `MANIFEST.in`, a `requirements.txt` and a `test_requirements.txt`. That's why the words of [Sébastien Eustace](https://github.com/sdispater), the creator of [Poetry](https://github.com/sdispater/poetry), made a lot of sense to me:
 
 > Packaging and dependency management in Python are rather convoluted and hard to understand for newcomers. Even for seasoned developers it might be cumbersome at times to create all files needed in a Python project: `setup.py`, `requirements.txt`, `setup.cfg`, `MANIFEST.in` and the newly added `Pipfile`.
-> 
+>
 > So I wanted a tool that would limit everything to a single configuration file to do: dependency management, packaging and publishing.
-> 
+>
 > It takes inspiration in tools that exist in other languages, like `composer` (PHP) or `cargo` (Rust).
-> 
+>
 > And, finally, there is no reliable tool to properly resolve dependencies in Python, so I started `poetry` to bring an exhaustive dependency resolver to the Python community.
 
-Poetry is by [no means perfect](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry) but, unlike other tools, it really does what promises.
+Poetry is by [no means perfect](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry) but, unlike other tools, it really does what promise.
