@@ -97,7 +97,7 @@ build-backend = "poetry.masonry.api"
 
 #### [tool.poetry]
 
-The details. Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [Readme](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
+The details. Adding a [license](https://poetry.eustace.io/docs/pyproject/#license) and a [README](https://poetry.eustace.io/docs/pyproject/#readme) might be a good idea:
 
 ```
 [tool.poetry]
@@ -112,7 +112,7 @@ First is the Python version. Basically, this project will be compatible with Pyt
 
 #### [tool.poetry.dev-dependencies]
 
-These packages are only for development and will not be included when we publish our project. By default Poetry includes [Pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project later on.
+These packages are only for development and will not be included when we publish our project. By default, Poetry includes [Pytest](https://docs.pytest.org/en/latest/), so we will use it to test our project later on.
 
 ## Creating a Virtual Environment
 
