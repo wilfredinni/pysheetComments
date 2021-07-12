@@ -43,10 +43,10 @@ example_5 = now.strftime("%b/%d/%Y - %H:%M:%S")
 
 ## From String to Datetime object
 
-This time we need to pass two parameters to `strptime()`, **the date as a string** and **the format**:
+This time we need to pass two parameters to `strptime()`, **the datetime as a string** and **the format**:
 
 ```python
-datetime.strptime(date_string, format)
+datetime.strptime(datetime_string, format)
 ```
 
 Examples
