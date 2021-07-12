@@ -2,11 +2,17 @@
 
 Backups for the python Cheatsheet [blog](https://www.pythoncheatsheet.org/blog).
 
+## 2021
+
+#### July
+
+- [Shorts: Python Strings and Datetime Objects](https://github.com/wilfredinni/pysheetComments/blob/master/2021/july/1_shorts_time_and_strings/shorts_time_and_strings.md)
+
 ## 2019
 
 #### March
 
-- [Python *args and **kwargs Made Easy](https://github.com/wilfredinni/pysheetComments/blob/master/2019/March/simple_args_kwargs/args-kwargs-made-simple.md)
+- [Python \*args and \*\*kwargs Made Easy](https://github.com/wilfredinni/pysheetComments/blob/master/2019/March/simple_args_kwargs/args-kwargs-made-simple.md)
 
 - [Python Comprehensions: A step by step Introduction](https://github.com/wilfredinni/pysheetComments/blob/master/2019/March/python_comprehensions/python-comprehensions-step-by-step.md)
 
